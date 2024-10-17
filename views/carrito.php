@@ -35,7 +35,7 @@
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
 										</div>
 										<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
 									</td>
@@ -46,7 +46,7 @@
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
 										</div>
 										<span class="title pl-2"><a href="shop-detail.html">Neque Porro Quisquam</a></span>
 									</td>
@@ -57,7 +57,7 @@
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
 										</div>
 										<span class="title pl-2"><a href="shop-detail.html">Aliquam Quaerat Voluptem</a></span>
 									</td>
@@ -68,7 +68,7 @@
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
 										</div>
 										<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
 									</td>
@@ -79,7 +79,7 @@
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
 										</div>
 										<span class="title pl-2"><a href="shop-detail.html">Sint Incidunt Utlabore</a></span>
 									</td>
