@@ -20,7 +20,7 @@
         <input type="number" class="form-control" id="stock" name="stock" required>
     </div>
     <div class="col-12 e-form">
-        <label for="categoria" class="form-label">Stock:</label>
+        <label for="categoria" class="form-label">Categoría:</label>
         <input type="number" class="form-control" id="categoria" name="categoria" required>
     </div>
     <div class="col-12 e-form">
