@@ -22,6 +22,10 @@
 	<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/color.css">
 	<!-- include theme responsive setting stylesheet -->
 	<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/responsive.css">
+	<script>
+		//Minusculas en javascript y las mayusculas en php.
+		const base_url = '<?php echo BASE_URL;?>';
+	</script>
 </head>
 <body>
 	<!-- pageWrapper -->

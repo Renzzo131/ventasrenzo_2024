@@ -2843,3 +2843,9 @@ a {
   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
   transform: translateY(-3%);
 }
+
+#formil{
+  border: 1px rgb(5, 134, 240) solid;
+  padding: 20px;
+  border-radius: 10px;
+}
