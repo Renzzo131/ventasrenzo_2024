@@ -10,7 +10,7 @@
     <div class="container min-vh-100 d-flex justify-content-center align-items-center">
         <div class="loguin row">
             <div class="col-6">
-                <img src="<?php echo BASE_URL;?>views/plantilla/images/minimal.png" class="img-fluid" alt="portada">
+                <img src="<?php echo BASE_URL;?>assets/images/minimal.png" class="img-fluid" alt="portada">
             </div>
             <form action="" class="col-6 row" id="formularioLogin">
                 <div class="col-12 text-center">
