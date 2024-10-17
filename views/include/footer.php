@@ -69,5 +69,7 @@
 	<script src="<?php echo BASE_URL;?>assets/js/bootstrap.min.js"></script>
 	<!-- include custom JavaScript -->
 	<script src="<?php echo BASE_URL;?>assets/js/jqueryCustome.js"></script>
+	<!-- Alerta -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
-</html>
+</html> 

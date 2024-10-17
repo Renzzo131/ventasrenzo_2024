@@ -1,4 +1,4 @@
-<form action="">
+<form action="" method="" id="formul">
     <div class="col-12">
         <label for="codigo" class="form-label">Código:</label>
         <input type="text" class="form-control" id="codigo" name="codigo" required>
@@ -44,3 +44,4 @@
         <button type="submit" class="btn btn-primary">Registrar</button>
     </div>
 </form>
+<script src="<?php echo BASE_URL;?>views/js/functions_producto.js"></script>
