@@ -87,7 +87,7 @@
 								<div class="collapse navbar-collapse" id="navbarNav">
 									<ul class="navbar-nav mx-auto text-uppercase d-inline-block">
 										<li class="nav-item">
-											<a role="button" href="<?php echo BASE_URL;?>inicio">Inicio</a>
+											<a role="button" href="<?php echo BASE_URL;?>producto">Inicio</a>
 										</li>
 										<li class="nav-item">
 											<a role="button" href="<?php echo BASE_URL;?>tienda">Tienda</a>
