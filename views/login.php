@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="col-8">
-                    <a href="<?php echo BASE_URL;?>inicio" class="btn btn-primary">Iniciar sesión</a>
+                    <a href="<?php echo BASE_URL;?>producto" class="btn btn-primary">Iniciar sesión</a>
                     <!--<button type="submit" class="btn btn-primary">Iniciar sesión</button>-->
                 </div>
             </div>
