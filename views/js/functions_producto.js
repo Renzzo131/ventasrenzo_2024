@@ -5,13 +5,13 @@ async function registrar_productos(){
     let precio = document.querySelector('#precio').value;
     let stock = document.querySelector('#stock').value;
     let categoria = document.querySelector('#categoria').value;
-    let imagen_1 = document.querySelector('#imagen1').value;
-    let imagen_2 = document.querySelector('#imagen2').value;
-    let imagen_3 = document.querySelector('#imagen3').value;
-    let imagen_4 = document.querySelector('#imagen4').value;
+    let imagen1 = document.querySelector('#imagen1').value;
+    let imagen2 = document.querySelector('#imagen2').value;
+    let imagen3 = document.querySelector('#imagen3').value;
+    let imagen4 = document.querySelector('#imagen4').value;
     let proveedor = document.querySelector('#proveedor').value;
     //Estamos validando que no se envien campos vacios
-    if(codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || imagen_1 == "" || imagen_2 == "" || imagen_3 == "" || imagen_4 == "" || proveedor == ""){
+    if(codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || imagen1 == "" || imagen2 == "" || imagen3 == "" || imagen4 == "" || proveedor == ""){
         alert("Error. Campos vacíos");
         return;
     }
@@ -21,6 +21,7 @@ async function registrar_productos(){
         //Estamos creando un formulario
         const datos = new FormData(formil);
         //Enviar datos hacia el controlador
+        //
         let respuesta = await fetch(base_url+'controller/Producto.php?tipo=registrar',{
         method: 'POST',
         mode: 'cors',

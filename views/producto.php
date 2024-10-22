@@ -5,7 +5,7 @@
 				<div class="slick-fade">
 					<div>
 						<!-- align -->
-						<div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/blanco.jpg)">
+						<div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/portadaweb.webp)">
 							<div class="container position-relative holder pt-xl-10">
 								<div class="row">
 									<div class="col-12 col-xl-7">
