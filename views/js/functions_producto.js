@@ -40,3 +40,11 @@ async function registrar_productos(){
     }
     //Los programadores suelen utilizar solo la letra e y no error.
 }
+
+async function listar_categoria(){
+    try {
+        let respuesta = await fetch(base_url+'controller/Categoria.php?tipo=listar');
+    } catch (error) {
+        console.log("Error al cargar categorias"+ error);
+    }
+}
