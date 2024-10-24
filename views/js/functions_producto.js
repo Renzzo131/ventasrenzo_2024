@@ -27,8 +27,13 @@ async function registrar_productos(){
         mode: 'cors',
         cache: 'no-cache',
         body: datos});
-        
-        console.log(respuesta);
+        json = await respuesta.json();
+        if(json.status){
+            swal("Registro", json.mensaje,"success")
+        }else{
+            swal("Registro", json.mensaje,"error")
+        }
+        console.log(json);
 
     } catch (error) {
         console.log("Oops, ocurrió un error " + error);

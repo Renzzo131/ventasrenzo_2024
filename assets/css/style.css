@@ -2860,7 +2860,6 @@ a {
 }
 
 #formil{
-  border: 1px rgb(5, 134, 240) solid;
+  border: 1px #ce5300 solid;
   padding: 20px;
-  border-radius: 10px;
 }
