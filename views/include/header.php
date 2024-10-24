@@ -33,48 +33,14 @@
 		<!-- header -->
 		<header id="header" class="position-relative">
 			<!-- headerHolderCol -->
-			<div class="headerHolderCol pt-lg-4 pb-lg-5 py-3">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-4">
-							<a href="javascript:void(0);" class="tel d-flex align-items-end"><i class="icon-call mr-2"></i>  Hotline: (602) 462 8889</a>
-						</div>
-						<div class="col-12 col-sm-4 text-center">
-							<span class="txt d-block">Bienvenido a RS Salva</span>
-						</div>
-						<div class="col-12 col-sm-4">
-							<!-- langListII -->
-							<ul class="nav nav-tabs langListII justify-content-end border-bottom-0">
-								<li class="dropdown">
-									<span>Currency: </span>
-									<a class="d-inline dropdown-toggle text-uppercase" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">USD</a>
-									<div class="dropdown-menu text-uppercase pl-4 pr-4 border-0">
-										<a class="dropdown-item" href="javascript:void(0);">USD</a>
-										<a class="dropdown-item" href="javascript:void(0);">VND</a>
-										<a class="dropdown-item" href="javascript:void(0);">euro</a>
-									</div>
-								</li>
-								<li class="dropdown m-0">
-									<span>Languages: </span>
-									<a class="d-inline dropdown-toggle text-uppercase" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">EN</a>
-									<div class="dropdown-menu pl-4 pr-4">
-										<a class="dropdown-item" href="javascript:void(0);">English</a>
-										<a class="dropdown-item" href="javascript:void(0);">Vietnamese</a>
-										<a class="dropdown-item" href="javascript:void(0);">French</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<!-- headerHolder -->
 			<div class="headerHolder container pt-lg-5 pb-lg-7 py-4">
 				<div class="row">
 					<div class="col-6 col-sm-2">
 						<!-- mainLogo -->
 						<div class="logo">
-							<a href="<?php echo BASE_URL;?>inicio"><img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="Botanical" class="img-fluid"></a>
+							<a href="<?php echo BASE_URL;?>producto"><img src="<?php echo BASE_URL;?>assets/images/logo_blanc.png" alt="Botanical" class="img-fluid"></a>
 						</div>
 					</div>
 					<div class="col-6 col-sm-7 col-lg-8 static-block d-flex align-items-center justify-content-center">

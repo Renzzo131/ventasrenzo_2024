@@ -47,7 +47,7 @@
 .commentsBlock .commentArea .commentDate .link,
 .langList .dropdown-menu .dropdown-item a:hover,
 .langListII .dropdown-menu .dropdown-item:hover {
-  color: #5ba515; }
+  color: #ce5300; }
 
 .ui-widget-header,
 .pagination a:hover,
@@ -76,7 +76,7 @@
 .cartHolder .cartTable .jcf-number .jcf-btn-dec:hover,
 .ui-state-default, .ui-widget-content .ui-state-default,
 .productTextHolder .sizeList [type="checkbox"]:checked + .fake-input {
-  background: #5ba515; }
+  background: #e66208; }
 
 .tabSetList a:after,
 .pagination a:hover,
@@ -89,4 +89,4 @@
 .footerHolder .tagNavList a:hover,
 .show-head .viewFilterLinks a:hover,
 .dealSlider .slick-dots button:before {
-  border-color: #5ba515; }
+  border-color: #ff7110; }

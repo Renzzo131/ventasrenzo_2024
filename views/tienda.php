@@ -1,15 +1,15 @@
 		<!-- main -->
 		<main>
 			<!-- introBannerHolder -->
-			<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(http://placehold.it/1920x300);">
+			<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(./assets/images/panoramica2.png);">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
-							<h1 class="headingIV fwEbold playfair mb-4">Shop</h1>
+							<h1 class="headingIV fwEbold playfair mb-4">Tienda</h1>
 							<ul class="list-unstyled breadCrumbs d-flex justify-content-center">
-								<li class="mr-2"><a href="home.html">Home</a></li>
+								<li class="mr-2"><a href="<?php echo BASE_URL;?>producto">Inicio</a></li>
 								<li class="mr-2">/</li>
-								<li class="active">Shop</li>
+								<li class="active">Tienda</li>
 							</ul>
 						</div>
 					</div>
@@ -390,8 +390,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="container mb-lg-24 mb-md-16 mb-10">
-				<!-- subscribeSecBlock -->
+			<!--<div class="container mb-lg-24 mb-md-16 mb-10">
+
 				<section class="subscribeSecBlock bgCover col-12 pt-lg-24 pb-lg-12 pt-md-16 pb-md-8 py-10" style="background-image: url(http://placehold.it/1170x465)">
 					<header class="col-12 mainHeader mb-9 text-center">
 						<h1 class="headingIV playfair fwEblod mb-4">Subscribe Our Newsletter</h1>
@@ -403,4 +403,4 @@
 						<button type="submit" class="btn btnTheme btnShop fwEbold text-white py-3 px-4 py-md-3 px-md-4">Shop Now <i class="fas fa-arrow-right ml-2"></i></button>
 					</form>
 				</section>
-			</div>
+			</div>-->

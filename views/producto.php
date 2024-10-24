@@ -5,14 +5,14 @@
 				<div class="slick-fade">
 					<div>
 						<!-- align -->
-						<div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/portadaweb.webp)">
+						<div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/6.jpg)">
 							<div class="container position-relative holder pt-xl-10">
 								<div class="row">
 									<div class="col-12 col-xl-7">
 										<div class="txtwrap pr-xl-10">
-											<span class="title d-block text-uppercase fwEbold position-relative pl-2 mb-md-5 mb-sm-3">Bienvenido a la tienda de reutilizables</span>
-											<h1 class="fwEbold position-relative mb-md-7 mb-sm-4">RS Salva <span class="text-break d-block">La elección perfecta.</span></h1>
-											<p class="mb-md-15 mb-sm-10">Descubre el encanto de lo único: al comprar productos de segunda mano, no solo ahorras dinero, ¡también contribuyes al cuidado del planeta y encuentras tesoros con historia!</p>
+											<span class="title d-block text-uppercase fwEbold position-relative pl-2 mb-md-5 mb-sm-3">Todo lo que necesitas para encestar tus metas.</span>
+											<h1 class="fwEbold position-relative mb-md-7 mb-sm-4">ABC <span class="text-break d-block">La elección perfecta.</span></h1>
+											<p class="mb-md-15 mb-sm-10">Descubre la pasión del baloncesto: al elegir nuestros productos, no solo mejoras tu juego, ¡también te unes a una comunidad que ama el deporte tanto como tú!</p>
 											<a href="shop.html" class="btn btnTheme btnShop fwEbold text-white md-round py-3 px-4">Compra Ahora <i class="fas fa-arrow-right ml-2"></i></a>
 										</div>
 									</div>
@@ -22,7 +22,7 @@
 					</div>
 					<div>
 						<!-- align -->
-						<div class="align w-100 bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/tierra.jpg);">
+						<div class="align w-100 bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/9.jpg);">
 							<div class="container position-relative holder pt-14">
 								<!-- py-12 pt-lg-30 pb-lg-25 -->
 								<div class="row">
@@ -94,7 +94,7 @@
 					<div class="col-12">
 						<!-- quotationBlock -->
 						<blockquote class="quotationBlock text-center d-block m-0">
-							<q class="d-block playfair mb-7">Enviamos plantas en macetas saludables directamente a su puerta. Cada planta viene con sencillas instrucciones de cuidado de nuestros expertos en plantas.</q>
+							<q class="d-block playfair mb-7">Te traemos la emoción del baloncesto directamente a tu puerta. Cada producto viene con consejos de expertos para elevar tu juego al siguiente nivel. ¡Descubre tu pasión por el baloncesto hoy!</q>
 							<cite class="d-block">
 								<img src="<?php echo BASE_URL;?>assets/images/ia.png" alt="signature" class="img-fluid mb-6">
 								<span class="d-flex flex-nowrap align-items-center justify-content-center">
@@ -264,8 +264,8 @@
 				<div class="row">
 					<!-- mainHeader -->
 					<header class="col-12 mainHeader mb-4 text-center">
-						<h1 class="headingIV playfair fwEblod mb-4">Best seller</h1>
-						<span class="headerBorder d-block mb-5"><img src="images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
+						<h1 class="headingIV playfair fwEblod mb-4">Mejor vendido</h1>
+						<span class="headerBorder d-block mb-5"><img src="./assets/images/5.jpg" alt="Header Border" class="img-fluid img-bdr"></span>
 						<p>There are many variations of passages of lorem ipsum available </p>
 					</header>
 				</div>

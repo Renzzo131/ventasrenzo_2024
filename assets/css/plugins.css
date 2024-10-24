@@ -1655,7 +1655,7 @@ body .ui-tooltip {
   /* support: IE8 */
   border-radius: 5px; }
 
-/* custom number input styles */
+/* custom number input styles 
 .jcf-number {
   display: inline-block;
   position: relative;
@@ -1722,7 +1722,7 @@ body .ui-tooltip {
 
 .jcf-number.jcf-disabled input {
   background: #ddd; }
-
+*/
 /* common custom form elements styles */
 .jcf-disabled {
   background: #ddd !important; }

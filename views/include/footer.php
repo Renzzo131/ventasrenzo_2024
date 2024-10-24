@@ -7,7 +7,7 @@
 							<ul class="list-unstyled footerContactList mb-3">
 								<li class="mb-3 d-flex flex-nowrap pr-xl-20 pr-0"><span class="icon icon-place mr-3"></span> <address class="fwEbold m-0">Dirección: Jr. General Córdova # 650</address></li>
 								<li class="mb-3 d-flex flex-nowrap"><span class="icon icon-phone mr-3"></span> <span class="leftAlign">Teléfono : <a href="javascript:void(0);">+51 987654321</a></span></li>
-								<li class="email d-flex flex-nowrap"><span class="icon icon-email mr-2"></span> <span class="leftAlign">Email:  <a href="javascript:void(0);">rssalva@gmail.com</a></span></li>
+								<li class="email d-flex flex-nowrap"><span class="icon icon-email mr-2"></span> <span class="leftAlign">Email:  <a href="javascript:void(0);">abcbaloncesto@gmail.com</a></span></li>
 							</ul>
 							<ul class="list-unstyled followSocailNetwork d-flex flex-nowrap">
 								<li class="fwEbold mr-xl-11 mr-md-8 mr-3">Síganos:</li>
