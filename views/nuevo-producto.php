@@ -38,7 +38,9 @@
     </div>
     <div class="col-12">
         <label for="categoria" class="form-label">Categoría:</label>
-        <input type="number" class="form-control"  id="categoria" name="categoria" required>
+        <select name="categoria" class="form-control" id="categoria" required>
+            <option value="" selected disabled>Selecciona una categoria</option>
+        </select>
     </div>
     <div class="col-12">
         <label for="proveedor" class="form-label">Proveedor:</label>
