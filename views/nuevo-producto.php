@@ -1,7 +1,7 @@
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
         <form action="" method="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <div class="col-12 mb-3">
+        <div class="col-12 mb-3 mt-3">
                 <center><h3>Formulario de registro de producto</h3></center>
             </div>
             <div class="col-12 mb-3">
@@ -52,21 +52,24 @@
             <div class="col-12 mb-3">
                 <label for="categoria" class="form-label">Categoría:</label>
                 <select name="categoria" class="form-control" id="categoria" required>
-                    <option value="" selected disabled>Selecciona una categoria</option>
+
                 </select>
             </div>
 
             <div class="col-12 mb-3">
-                <label for="proveedor" class="form-label">Proveedor:</label>
-                <input type="text" class="form-control" id="proveedor" name="proveedor" required>
+            <label for="proveedor" class="form-label">Proveedor:</label>
+                <select name="proveedor" class="form-control" id="proveedor" required>
+                    
+                </select>
             </div>
 
             <div class="col-12 d-flex justify-content-center">
                 <button type="reset" class="btn btn-dark w-48">Cancelar</button>
                 <button type="button" class="btn btn-warning w-48" onclick="registrar_productos();">Registrar</button>
             </div>
+
         </form>
     </div>
 </div>
-
+<script>listar_proveedor();</script>
 <script>listar_categoria();</script>
