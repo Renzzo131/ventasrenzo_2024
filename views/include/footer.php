@@ -61,6 +61,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="<?php echo BASE_URL;?>views/js/jquery-3.6.0.min.js"></script>
 	<!-- include jQuery library -->
 	<script src="<?php echo BASE_URL;?>assets/js/jquery-3.4.1.min.js"></script>
 	<!-- include bootstrap popper JavaScript -->
@@ -76,7 +77,7 @@
      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
      crossorigin="anonymous"></script>-->
 
-	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 	 
 </body>
