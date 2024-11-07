@@ -134,7 +134,7 @@
 											</ul>
 										</div>
 										<div class="text-center py-5 px-4">
-											<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+											<span class="title d-block mb-2"><a href="<?php echo BASE_URL;?>detalle">Pellentesque aliquet</a></span>
 											<span class="price d-block fwEbold">58.00 $</span>
 											<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
 										</div>
@@ -153,7 +153,7 @@
 											</ul>
 										</div>
 										<div class="text-center py-5 px-4">
-											<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+											<span class="title d-block mb-2"><a href="<?php echo BASE_URL;?>detalle">Pellentesque aliquet</a></span>
 											<span class="price d-block fwEbold">60.00 $</span>
 											<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">HOT</span>
 										</div>
@@ -172,7 +172,7 @@
 											</ul>
 										</div>
 										<div class="text-center py-5 px-4">
-											<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+											<span class="title d-block mb-2"><a href="<?php echo BASE_URL;?>detalle">Pellentesque aliquet</a></span>
 											<span class="price d-block fwEbold">68.00 $</span>
 										</div>
 									</div>
@@ -190,7 +190,7 @@
 											</ul>
 										</div>
 										<div class="text-center py-5 px-4">
-											<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+											<span class="title d-block mb-2"><a href="<?php echo BASE_URL;?>detalle">Pellentesque aliquet</a></span>
 											<span class="price d-block fwEbold">58.00 $</span>
 											<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Hot</span>
 										</div>

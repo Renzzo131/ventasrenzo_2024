@@ -31,22 +31,7 @@
 
             <div class="col-12 mb-3">
                 <label for="imagen1" class="form-label">Imagen 1:</label>
-                <input type="text" class="form-control" id="imagen1" name="imagen1" required>
-            </div>
-
-            <div class="col-12 mb-3">
-                <label for="imagen2" class="form-label">Imagen 2:</label>
-                <input type="text" class="form-control" id="imagen2" name="imagen2" required>
-            </div>
-
-            <div class="col-12 mb-3">
-                <label for="imagen3" class="form-label">Imagen 3:</label>
-                <input type="text" class="form-control" id="imagen3" name="imagen3" required>
-            </div>
-
-            <div class="col-12 mb-3">
-                <label for="imagen4" class="form-label">Imagen 4:</label>
-                <input type="text" class="form-control" id="imagen4" name="imagen4" required>
+                <input type="file" class="form-control" id="imagen1" name="imagen1" required>
             </div>
 
             <div class="col-12 mb-3">
@@ -59,7 +44,7 @@
             <div class="col-12 mb-3">
             <label for="proveedor" class="form-label">Proveedor:</label>
                 <select name="proveedor" class="form-control" id="proveedor" required>
-                    
+
                 </select>
             </div>
 

@@ -6,12 +6,9 @@ async function registrar_productos() {
     let stock = document.querySelector('#stock').value;
     let categoria = document.querySelector('#categoria').value;
     let imagen1 = document.querySelector('#imagen1').value;
-    let imagen2 = document.querySelector('#imagen2').value;
-    let imagen3 = document.querySelector('#imagen3').value;
-    let imagen4 = document.querySelector('#imagen4').value;
     let proveedor = document.querySelector('#proveedor').value;
     //Estamos validando que no se envien campos vacios
-    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || imagen1 == "" || imagen2 == "" || imagen3 == "" || imagen4 == "" || proveedor == "") {
+    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || imagen1 == "" || proveedor == "") {
         alert("Error. Campos vacíos");
         return;
     }

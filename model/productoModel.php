@@ -9,9 +9,9 @@ class ProductoModel
         $this->conexion = $this->conexion->connect();
     }
 
-    public function resgistrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen_1, $imagen_2, $imagen_3, $imagen_4, $id_categoria, $id_proveedor)
+    public function resgistrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen_1, $id_categoria, $id_proveedor)
     {
-        $sql = $this->conexion->query("CALL registrar_producto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}','{$imagen_1}','{$imagen_2}','{$imagen_3}','{$imagen_4}','{$id_categoria}','{$id_proveedor}')");
+        $sql = $this->conexion->query("CALL registrar_producto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}','{$imagen_1}','{$id_categoria}','{$id_proveedor}')");
         //$sql = $this->conexion->query("select * from producto");
         if ($sql === false) {
             // Mostrar el error de la consulta
@@ -20,4 +20,11 @@ class ProductoModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+
+    public function actualizar_imagen($id, $imagen1){
+        $sql = $this->conexion->query("UPDATE producto SET imagen_1 = '{$imagen1}' WHERE id = '{$id}'");
+        return 1;
+    }
 }
+
+    
