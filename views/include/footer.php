@@ -71,5 +71,9 @@
 	<script src="<?php echo BASE_URL;?>assets/js/jqueryCustome.js"></script>
 	<!-- Alerta -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"></script>
 </body>
 </html> 
