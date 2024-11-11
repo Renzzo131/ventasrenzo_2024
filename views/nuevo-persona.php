@@ -88,7 +88,7 @@
 </script> -->
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
-        <form action="" method="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
             <form action="" method="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
                 <div class="col-12 mb-3 mt-3">
                     <center>
@@ -155,6 +155,7 @@
                         <option value="" disabled selected>Selecciona un rol</option>
                         <option value="Administrador">Administrador</option>
                         <option value="Proveedor">Proveedor</option>
+                        <option value="Trabajador">Trabajador</option>
                         <option value="Cliente">Cliente</option>
                     </select>
                 </div>
@@ -181,7 +182,7 @@
                 <!-- Botones -->
                 <div class="col-12 d-flex justify-content-center">
                     <button type="reset" class="btn btn-dark w-48">Cancelar</button>
-                    <button type="submit" class="btn btn-warning w-48" onclick="registrar_personas();">Registrar</button>
+                    <button type="button" class="btn btn-warning w-48" onclick="registrar_personas();">Registrar</button>
                 </div>
             </form>
     </div>

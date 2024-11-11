@@ -13,7 +13,7 @@ if ($tipo == "registrar") {
         $telefono = $_POST['telefono'];
         $departamento = $_POST['departamento'];
         $provincia = $_POST['provincia'];
-        $distrito = 'distrito';
+        $distrito = $_POST['distrito'];
         $cod_postal = $_POST['cod_postal'];
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];

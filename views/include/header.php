@@ -27,6 +27,7 @@
 		const base_url = '<?php echo BASE_URL;?>';
 	</script>
 	<script src="<?php echo BASE_URL;?>views/js/functions_producto.js"></script>
+	<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 </head>
 <body>
 	<!-- pageWrapper -->
