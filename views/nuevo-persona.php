@@ -181,7 +181,7 @@
                 <!-- Botones -->
                 <div class="col-12 d-flex justify-content-center">
                     <button type="reset" class="btn btn-dark w-48">Cancelar</button>
-                    <button type="submit" class="btn btn-warning w-48">Registrar</button>
+                    <button type="submit" class="btn btn-warning w-48" onclick="registrar_personas();">Registrar</button>
                 </div>
             </form>
     </div>
