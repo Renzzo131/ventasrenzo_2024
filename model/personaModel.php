@@ -1,6 +1,7 @@
 <?php
 require_once "../librerias/conexion.php";
-class PersonaModel{
+class PersonaModel
+{
     private $conexion;
     function __construct()
     {
@@ -20,5 +21,3 @@ class PersonaModel{
         return $sql;
     }
 }
-
- ?>   
