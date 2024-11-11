@@ -42,3 +42,4 @@ async function registrar_personas() {
     }
     //Los programadores suelen utilizar solo la letra e y no error.
 }
+

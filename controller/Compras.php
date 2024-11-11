@@ -24,8 +24,6 @@ if ($tipo == "listar"){
     echo json_encode($arr_Respuesta);
 }
 
-require_once "../model/categoriaModel.php";
-$tipo = $_REQUEST['tipo'];
 
 //instancia de la clase ProductoModel
 $objCompras = new ComprasModel();

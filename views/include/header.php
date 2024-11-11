@@ -29,6 +29,7 @@
 	<script src="<?php echo BASE_URL;?>views/js/functions_producto.js"></script>
 	<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 	<script src="<?php echo BASE_URL;?>views/js/functions_categoria.js"></script>
+	<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
 </head>
 <body>
 	<!-- pageWrapper -->
