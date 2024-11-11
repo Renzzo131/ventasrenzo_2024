@@ -21,7 +21,7 @@ class CategoriaModel
     }
     public function resgistrarCategoria($nombre, $detalle)
     {
-        $sql = $this->conexion->query("CALL registrar_categoria('{$nombre}','{$detalle}'");
+        $sql = $this->conexion->query("CALL registrar_categoria('{$nombre}', '{$detalle}')");
         //$sql = $this->conexion->query("select * from producto");
         if ($sql === false) {
             // Mostrar el error de la consulta
