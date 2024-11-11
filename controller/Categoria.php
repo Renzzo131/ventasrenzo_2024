@@ -28,21 +28,19 @@ require_once "../model/categoriaModel.php";
 $tipo = $_REQUEST['tipo'];
 
 //instancia de la clase ProductoModel
-$objPersona = new CategoriaModel();
+$objCategoria = new CategoriaModel();
 if ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
         if ($_POST) {
-        $nro_identidad = $_POST['nombre'];
-        $razon_social = $_POST['detalle'];
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
         if ($nombre == "" || $detalle == "") {
             //Vamos a responder con una estructura de objetos en formato JSON
             //RESPUESTA
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error, campos vacíos');
         }else{
-            $arrPersona = $objPersona->resgistrarCategoria(
-                $nro_identidad, $razon_social, $telefono, $departamento, $provincia,  $distrito, $cod_postal, $direccion, $rol, $correo, $password, $estado
-            );
+            $arrPersona = $objCategoria->resgistrarCategoria($nombre, $detalle);
             //id es lo que me devuelve la base de datos por el procedimiento
             if ($arrPersona->id > 0) {
                 $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
