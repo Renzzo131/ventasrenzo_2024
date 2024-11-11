@@ -1,7 +1,7 @@
 <?php
 require_once "../librerias/conexion.php";
 
-class categoriaModel{
+class CategoriaModel{
 
     private $conexion;
     function __construct()   {
@@ -16,7 +16,17 @@ class categoriaModel{
         }
         return $arrRespuesta;
     }
+    public function resgistrarCategoria($nombre, $detalle)
+    {
+        $sql = $this->conexion->query("CALL registrar_persona('{$nombre}','{$detalle}'");
+        //$sql = $this->conexion->query("select * from producto");
+        if ($sql === false) {
+            // Mostrar el error de la consulta
+            die("Error en la consulta: " . $this->conexion->error);
+        }
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 
 }
-
 ?>
