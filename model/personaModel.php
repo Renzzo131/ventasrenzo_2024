@@ -10,7 +10,7 @@ class PersonaModel{
 
     public function resgistrarPersona($nro_identidad, $razon_social, $telefono, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $correo, $password, $estado)
     {
-        $sql = $this->conexion->query("CALL registrar_persona('{$nro_identidad}','{$razon_social}','{$telefono}','{$departamento}','{$provincia}','{$distrito}','{$cod_postal}','{$direccion}','{$rol}','{$correo}','{$password}','{$estado}')");
+        $sql = $this->conexion->query("CALL registrar_persona('{$nro_identidad}', '{$razon_social}', '{$telefono}', '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}', '{$correo}', '{$password}', '{$estado}')");
         //$sql = $this->conexion->query("select * from producto");
         if ($sql === false) {
             // Mostrar el error de la consulta
