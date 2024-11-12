@@ -24,8 +24,8 @@
             </div>
 
             <div class="col-12 mb-3">
-                <label for="fecha" class="form-label">fecha_compra:</label>
-                <input type="date" class="form-control" id="fecha" name="fecha" required>
+                <label for="fecha_compra" class="form-label">fecha_compra:</label>
+                <input type="date" class="form-control" id="fecha_compra" name="fecha_compra" required>
             </div>
 
             <div class="col-12 mb-3">

@@ -32,10 +32,10 @@ if ($tipo == "registrar") {
     //echo $_FILES['imagen1']['name'];
         if ($_POST) {
         $id_producto = $_POST['nombre'];
-        $cantidad = $_POST['detalle'];
-        $precio = $_POST['detalle'];
-        $fecha_compra = $_POST['detalle'];
-        $id_persona = $_POST['detalle'];
+        $cantidad = $_POST['cantidad'];
+        $precio = $_POST['precio'];
+        $fecha_compra = $_POST['fecha_compra'];
+        $id_persona = $_POST['id_persona'];
         if ($id_producto == "" || $cantidad == ""|| $precio == ""|| $fecha_compra == ""|| $id_persona == "") {
             //Vamos a responder con una estructura de objetos en formato JSON
             //RESPUESTA
