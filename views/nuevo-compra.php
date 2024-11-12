@@ -14,13 +14,13 @@
             </div>
 
             <div class="col-12 mb-3">
-                <label for="nombre" class="form-label">Cantidad:</label>
+                <label for="cantidad" class="form-label">Cantidad:</label>
                 <input type="number" class="form-control" id="cantidad" name="cantidad" required>
             </div>
 
             <div class="col-12 mb-3">
                 <label for="precio" class="form-label">Precio:</label>
-                <input type="text" class="form-control" id="detalle" name="detalle" required>
+                <input type="text" class="form-control" id="precio" name="precio" required>
             </div>
 
             <div class="col-12 mb-3">
