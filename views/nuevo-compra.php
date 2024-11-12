@@ -29,7 +29,7 @@
             </div>
 
             <div class="col-12 mb-3">
-                <label for="id_persona" class="form-label">Cliente:</label>
+                <label for="id_persona" class="form-label">Proveedor:</label>
                 <select name="id_persona" class="form-control" id="id_persona" required>
 
                 </select>
