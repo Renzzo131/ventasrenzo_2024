@@ -31,7 +31,7 @@ if ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
         if ($_POST) {
-        $id_producto = $_POST['nombre'];
+        $id_producto = $_POST['id_producto'];
         $cantidad = $_POST['cantidad'];
         $precio = $_POST['precio'];
         $fecha_compra = $_POST['fecha_compra'];
