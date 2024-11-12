@@ -2,7 +2,7 @@ async function registrar_compras() {
     let id_producto = document.getElementById('id_producto').value;
     let cantidad = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio').value;
-    let fecha_compra = document.querySelector('#fecha_compra').value;
+    let fecha_compra = document.querySelector('#fecha').value;
     let id_persona = document.querySelector('#id_persona').value;
     //Estamos validando que no se envien campos vacios
     if (id_producto == "" || cantidad == ""|| precio == ""|| fecha_compra == ""|| id_persona == "") {
