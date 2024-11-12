@@ -37,7 +37,7 @@
 
             <div class="col-12 d-flex justify-content-center">
                 <button type="reset" class="btn btn-dark w-48">Cancelar</button>
-                <button type="button" class="btn btn-warning w-48" onclick="registrar_compras();">Registrar</button>
+                <button type="button" class="btn btn-warning w-48" onclick="registrar_compras()">Registrar</button>
             </div>
 
         </form>

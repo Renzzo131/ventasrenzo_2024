@@ -21,7 +21,7 @@ class ComprasModel
     }
     public function resgistrarCompras($id_producto, $cantidad, $precio, $fecha_compra, $id_persona)
     {
-        $sql = $this->conexion->query("CALL registrar_compras('{$id_producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$id_persona}')");
+        $sql = $this->conexion->query("CALL registrar_compra('{$id_producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$id_persona}')");
         //$sql = $this->conexion->query("select * from producto");
         if ($sql === false) {
             // Mostrar el error de la consulta
