@@ -49,7 +49,7 @@ async function listar_personas() {
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
-            let contenido_select = '<option disabled selected>Seleccione un cliente</option>';
+            let contenido_select = '<option disabled selected>Seleccione un proveedor</option>';
             datos.forEach(element => {
                 contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
             });
