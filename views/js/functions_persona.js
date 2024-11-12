@@ -43,3 +43,29 @@ async function registrar_personas() {
     //Los programadores suelen utilizar solo la letra e y no error.
 }
 
+async function listar_personas() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option disabled selected>Seleccione un cliente</option>';
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+            });
+            document.getElementById('id_persona').innerHTML = contenido_select;
+            //Trabaja con jquery
+            /*let datos = json.contenido;
+            datos.forEach(element => {
+                $('#categoria').append($('<option />',{
+                    text: `${element.nombre}`,
+                    value: `${element.id}`
+                }));
+            });*/
+        }
+
+        console.log(respuesta);
+    } catch (error) {
+        console.log("Error al cargar clientes" + error);
+    }
+}

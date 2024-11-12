@@ -48,4 +48,25 @@ if ($tipo == "registrar") {
         }
     }
 }
+
+
+
+if ($tipo == "listar"){
+    //Respuesta
+    $arr_Respuesta = array('status'=>false, 'contenido'=>'');
+    $arrProductos = $objProducto->obtener_productos();
+    if (!empty($arrProductos)){
+       //Recorremos el array para agregar las opciones de las categorias
+        for ($i=0; $i < count($arrProductos); $i++) { 
+            $id_categoria = $arrProductos[$i]->id;
+            $categoria = $arrProductos[$i]->nombre;
+            $opciones = '';
+            $arrProductos[$i]->options = $opciones;
+       } 
+       $arr_Respuesta['status'] = true;
+       $arr_Respuesta['contenido'] = $arrProductos;
+    }
+    //print_r($arrCategorias);
+    echo json_encode($arr_Respuesta);
+}
 ?>

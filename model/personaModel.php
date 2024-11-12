@@ -20,4 +20,13 @@ class PersonaModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+
+    public function obtener_personas(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'Cliente'");
+        while($objeto = $respuesta->fetch_object()){
+            array_push($arrRespuesta, $objeto);
+        }
+        return $arrRespuesta;
+    }
 }
