@@ -40,12 +40,12 @@ if ($tipo == "registrar") {
             //RESPUESTA
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error, campos vacíos');
         }else{
-            $arrPersona = $objCategoria->resgistrarCategoria($nombre, $detalle);
+            $arrCategoria = $objCategoria->resgistrarCategoria($nombre, $detalle);
             //id es lo que me devuelve la base de datos por el procedimiento
-            if ($arrPersona->id > 0) {
+            if ($arrCategoria->id > 0) {
                 $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
             }else{
-                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar producto');
+                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar categoria');
             }
             echo json_encode($arr_Respuesta);
         }

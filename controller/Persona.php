@@ -32,7 +32,7 @@ if ($tipo == "registrar") {
             if ($arrPersona->id > 0) {
                 $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
             }else{
-                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar producto');
+                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
             }
             echo json_encode($arr_Respuesta);
         }
