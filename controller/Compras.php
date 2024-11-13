@@ -1,4 +1,6 @@
 <?php
+require_once "../model/comprasModel.php";
+$tipo = $_REQUEST['tipo'];
 //instancia de la clase ProductoModel
 $objCompras = new ComprasModel();
 if ($tipo == "registrar") {
@@ -20,7 +22,7 @@ if ($tipo == "registrar") {
             if ($arrCompras->id > 0) {
                 $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
             }else{
-                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar producto');
+                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar la compra');
             }
             echo json_encode($arr_Respuesta);
         }
