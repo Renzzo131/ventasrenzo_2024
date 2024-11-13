@@ -13,7 +13,7 @@ async function registrar_compras() {
     try {
         //Capturamos datos del html
         //Estamos creando un formulario
-        const datos = new FormData(formil);
+        const datos = new FormData(document.getElementById('formil'));
         //Enviar datos hacia el controlador
         //
         let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=registrar', {

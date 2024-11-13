@@ -17,7 +17,7 @@ if ($tipo == "registrar") {
             //RESPUESTA
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error, campos vacíos');
         }else{
-            $arrCompras = $objCompras->resgistrarCompras($id_producto, $cantidad, $precio, $fecha_compra, $id_persona);
+            $arrCompras = $objCompras->registrarCompras($id_producto, $cantidad, $precio, $fecha_compra, $id_persona);
             //id es lo que me devuelve la base de datos por el procedimiento
             if ($arrCompras->id > 0) {
                 $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
