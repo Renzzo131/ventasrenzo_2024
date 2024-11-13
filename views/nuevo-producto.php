@@ -1,6 +1,6 @@
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
-        <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6" enctype="multipart/form-data">
         <div class="col-12 mb-3 mt-3">
                 <center><h3>Formulario de registro de producto</h3></center>
             </div>
