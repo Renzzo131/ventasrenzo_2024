@@ -155,6 +155,7 @@
                         <option value="" disabled selected>Selecciona un rol</option>
                         <option value="Administrador">Administrador</option>
                         <option value="Proveedor">Proveedor</option>
+                        <option value="Proveedor">Vendedor</option>
                         <option value="Cliente">Cliente</option>
                     </select>
                 </div>
@@ -169,7 +170,7 @@
                 <!-- Contraseña -->
                 <div class="col-12 mb-3">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" name="password" required
+                    <input type="password" class="form-control" id="password" name="password"
                         minlength="6" title="La contraseña debe tener al menos 6 caracteres.">
                 </div>
 

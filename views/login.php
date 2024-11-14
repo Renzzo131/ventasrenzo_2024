@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/style.css">
 </head>
 <body>
     <div class="container min-vh-100 d-flex justify-content-center align-items-center">
         <div class="loguin row">
             <div class="col-6">
-                <img src="<?php echo BASE_URL;?>assets/images/minimal.png" class="img-fluid" alt="portada">
+                <img src="<?php echo BASE_URL;?>assets/images/11.jpg" class="img-fluid" alt="portada">
             </div>
             <form action="" class="col-6 row" id="formularioLogin">
                 <div class="col-12 text-center">
@@ -31,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-8">
-                    <a href="<?php echo BASE_URL;?>producto" class="btn btn-primary">Iniciar sesión</a>
+                    <a href="<?php echo BASE_URL;?>producto" class="btn btn-warning">Iniciar sesión</a>
                     <!--<button type="submit" class="btn btn-primary">Iniciar sesión</button>-->
                 </div>
             </div>
