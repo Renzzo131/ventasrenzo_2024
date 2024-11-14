@@ -2,12 +2,11 @@
 require_once "../model/personaModel.php";
 $tipo = $_REQUEST['tipo'];
 
-//instancia de la clase ProductoModel
+// Instancia de la clase PersonaModel
 $objPersona = new PersonaModel();
+
 if ($tipo == "registrar") {
-    //print_r($_POST);
-    //echo $_FILES['imagen1']['name'];
-        if ($_POST) {
+    if ($_POST) {
         $nro_identidad = $_POST['nro_identidad'];
         $razon_social = $_POST['razon_social'];
         $telefono = $_POST['telefono'];
@@ -18,26 +17,32 @@ if ($tipo == "registrar") {
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
         $correo = $_POST['correo'];
-        $password = $_POST['password'];
+        $password = $_POST['password']; // Contraseña sin hash (se va a hashear)
         $estado = $_POST['estado'];
-        if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $departamento == "" || $provincia == "" || $distrito == "" || $cod_postal == "" || $direccion == ""|| $rol == ""|| $correo == ""|| $password == ""|| $estado == "") {
-            //Vamos a responder con una estructura de objetos en formato JSON
-            //RESPUESTA
-            $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error, campos vacíos');
-        }else{
+
+        // Validación de campos vacíos
+        if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $departamento == "" || $provincia == "" || $distrito == "" || $cod_postal == "" || $direccion == "" || $rol == "" || $correo == "" || $password == "" || $estado == "") {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+        } else {
+            // Hashear la contraseña usando MD5
+            $passwordHash = md5($password);  // Aquí es donde haces el hash
+
+            // Registrar persona con la contraseña hasheada
             $arrPersona = $objPersona->resgistrarPersona(
-                $nro_identidad, $razon_social, $telefono, $departamento, $provincia,  $distrito, $cod_postal, $direccion, $rol, $correo, $password, $estado
+                $nro_identidad, $razon_social, $telefono, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $correo, $passwordHash, $estado
             );
-            //id es lo que me devuelve la base de datos por el procedimiento
+
+            // Si el ID de la persona es mayor a 0, el registro fue exitoso
             if ($arrPersona->id > 0) {
-                $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
-            }else{
-                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
+                $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso');
+            } else {
+                $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al registrar persona');
             }
-            echo json_encode($arr_Respuesta);
         }
+        echo json_encode($arr_Respuesta);
     }
 }
+
 
 if ($tipo == "listar"){
     //Respuesta
