@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 class vistaModelo{
     protected static function obtener_vista($vista){
@@ -21,4 +22,4 @@ class vistaModelo{
     }
 }
 
-?>
+?>s

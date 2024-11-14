@@ -9,7 +9,7 @@ async function registrar_personas() {
     let direccion = document.querySelector('#direccion').value;
     let rol = document.querySelector('#rol').value;
     let correo = document.querySelector('#correo').value;
-    let password = document.querySelector('#password').value;
+    let password = document.querySelector('#nro_identidad').value;
     let estado = document.querySelector('#estado').value;
     //Estamos validando que no se envien campos vacios
     if (nro_identidad == "" || razon_social == "" || telefono == "" || departamento == "" || provincia == "" || distrito == "" || cod_postal == "" || direccion == ""|| rol == ""|| correo == ""|| password == ""|| estado == "") {

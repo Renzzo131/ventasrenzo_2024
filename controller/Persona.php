@@ -18,7 +18,7 @@ if ($tipo == "registrar") {
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
         $correo = $_POST['correo'];
-        $password = $_POST['password'];
+        $password = $_POST['nro_identidad'];
         $estado = $_POST['estado'];
 
 
@@ -28,7 +28,7 @@ if ($tipo == "registrar") {
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error, campos vacíos');
         }else{
             //Hasheado de contraseña cuando se envie una contraseña
-            $secure_password= password_hash($password, PASSWORD_DEFAULT);
+            $secure_password= password_hash($nro_identidad, PASSWORD_DEFAULT);
 
             $arrPersona = $objPersona->resgistrarPersona(
                 $nro_identidad, $razon_social, $telefono, $departamento, $provincia,  $distrito, $cod_postal, $direccion, $rol, $correo, $secure_password, $estado

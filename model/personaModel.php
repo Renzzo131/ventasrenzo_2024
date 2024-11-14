@@ -38,4 +38,10 @@ class PersonaModel
         }
         return $arrRespuesta;
     }
+
+    public function buscarPersonaPorDNI($password){
+        $sql = $this->conexion->query("SELECT * FROM persona WHERE nro_identidad = '{$password}'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

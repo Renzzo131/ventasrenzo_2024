@@ -167,13 +167,6 @@
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Introduce un correo electrónico válido.">
                 </div>
 
-                <!-- Contraseña -->
-                <div class="col-12 mb-3">
-                    <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" name="password"
-                        minlength="6" title="La contraseña debe tener al menos 6 caracteres.">
-                </div>
-
                 <!-- Estado oculto -->
                 <div class="col-12 mb-3">
                     <input type="hidden" class="form-control" id="estado" name="estado" value="1">

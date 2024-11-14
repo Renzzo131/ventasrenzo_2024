@@ -30,6 +30,7 @@
 	<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 	<script src="<?php echo BASE_URL;?>views/js/functions_categoria.js"></script>
 	<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
+	<script src="<?php echo BASE_URL;?>views/js/functions_login.js"></script>
 </head>
 <body>
 	<!-- pageWrapper -->
@@ -80,6 +81,12 @@
 										</li>-->
 										<li class="nav-item">
 											<a  href="<?php echo BASE_URL;?>contacto">Contactenos</a>
+										</li>
+										<li class="nav-item">
+											<button class="btn btn-warning" onclick="cerrar_sesion()">Cerrar sesión</button>
+										</li>
+										<li class="nav-item">
+										<a><?php echo $_SESSION['sesion_ventas_nombres']?></a>
 										</li>
 									</ul>
 								</div>

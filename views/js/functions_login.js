@@ -19,9 +19,10 @@ async function iniciar_sesion(){
         });
         json = await respuesta.json();
         if (json.status) {
-            swal("Iniciar Sesión", json.mensaje, "success")
+            /* swal("Iniciar Sesión", json.mensaje, "success"); */
+            location.replace(base_url + "producto");
         } else {
-            swal("Iniciar Sesión", json.mensaje, "error")
+            swal("Iniciar Sesión", json.mensaje, "error");
         }
         console.log(json);
 
@@ -37,5 +38,22 @@ if (document.querySelector('#formularioLogin')) {
     formularioLogin.onsubmit = function (e){
         e.preventDefault();
         iniciar_sesion();
+    }
+}
+
+async function cerrar_sesion() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/login.php?tipo=cerrar_sesion',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos 
+        });
+        json = await respuesta.json();
+        if(json.status){
+            location.replace(base_url + 'login');
+        }
+    } catch (error) {
+        console.log("Ocurrió un error "+error);
     }
 }
