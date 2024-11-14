@@ -83,7 +83,7 @@
 											<a  href="<?php echo BASE_URL;?>contacto">Contactenos</a>
 										</li>
 										<li class="nav-item">
-											<button class="btn btn-warning" onclick="cerrar_sesion()">Cerrar sesión</button>
+											<button class="btn btn-warning" onclick="cerrar_sesion();">Cerrar sesión</button>
 										</li>
 										<li class="nav-item">
 										<a><?php echo $_SESSION['sesion_ventas_nombres']?></a>
