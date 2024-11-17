@@ -95,8 +95,8 @@
 					<!-- mainHeader -->
 					<header class="col-12 mainHeader mb-4 text-center">
 						<h1 class="headingIV playfair fwEblod mb-4">Recién llegado</h1>
-						<span class="headerBorder d-block mb-5"><img src="images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-						<p>Hay muchas variaciones de pasajes de lorem ipsum disponibles.</p>
+						<span class="headerBorder d-block mb-5"><img src="<?php echo BASE_URL;?>assets/images/shorts1.png" alt="Header Border" class="img-fluid img-bdr"></span>
+						<p>¡Llega lo último para los verdaderos fanáticos de los Boston Celtics! El Short de Básquet "Boston Celtics Statement Edition Swingman" es la nueva joya que no puede faltar en tu colección. Con un diseño que combina la tradición ganadora de los Celtics con la modernidad de la NBA, este short está hecho para aquellos que quieren destacar dentro y fuera de la cancha.</p>
 					</header>
 				</div>
 				<div class="row">
