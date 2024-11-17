@@ -201,10 +201,10 @@
 					<div class="grid-item mb-6 px-3">
 						<div class="itemCol">
 							<div class="position-relative">
-								<img src="http://placehold.it/410x845" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/img_productos/tomatodo1.png" alt="image description" class="img-fluid w-100">
 								<div class="hoverTextBlock position-absolute">
-									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Cactus Plant</a></h2>
-									<span class="txt d-block">( 56 item )</span>
+									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Tomatodo con diseño de Baloncesto</a></h2>
+									<span class="txt d-block">( 10 artículos )</span>
 								</div>
 							</div>
 						</div>
@@ -265,8 +265,8 @@
 					<!-- mainHeader -->
 					<header class="col-12 mainHeader mb-4 text-center">
 						<h1 class="headingIV playfair fwEblod mb-4">Mejor vendido</h1>
-						<span class="headerBorder d-block mb-5"><img src="./assets/images/5.jpg" alt="Header Border" class="img-fluid img-bdr"></span>
-						<p>There are many variations of passages of lorem ipsum available </p>
+						<span class="headerBorder d-block mb-5"><img src="<?php echo BASE_URL;?>assets/images/balon1.webp" alt="Header Border" class="img-fluid img-bdr"></span>
+						<p>El Balón Wilson City Edition es, sin lugar a dudas, el artículo más vendido en ABC Basketball. Con un diseño moderno y un rendimiento excepcional, este balón se ha ganado rápidamente la preferencia de jugadores de todos los niveles, tanto para partidos competitivos como para entrenamientos. Con su combinación de estilo urbano y funcionalidad, el Wilson City Edition es perfecto para aquellos que buscan un balón duradero, con un excelente agarre y control, tanto en interiores como en exteriores.</p>
 					</header>
 				</div>
 				<div class="row">
@@ -274,7 +274,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="http://placehold.it/270x300" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/img_productos/chaqueta1.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -283,10 +283,9 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold mb-1"><del>80.50 $</del> 68.00 $</span>
-								<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">HOT</span>
-								<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Chaqueta Varsity Para Hombre</a></span>
+								<span class="price d-block fwEbold mb-1"><del>S/200.00</del>S/150.00</span>
+								<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Nuevo</span>
 							</div>
 						</div>
 					</div>
@@ -294,7 +293,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="http://placehold.it/270x300" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/img_productos/jersey1.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -303,8 +302,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold mb-1">58.00 $</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Jersey Los Ángeles Lakers - Morado</a></span>
+								<span class="price d-block fwEbold mb-1">S/50.00</span>
 							</div>
 						</div>
 					</div>
@@ -312,7 +311,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="http://placehold.it/270x300" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/img_productos/zapatillas1.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -321,9 +320,9 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold mb-1">60.00 $</span>
-								<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Hot</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Nike Air Jordan - Para Jovenes</a></span>
+								<span class="price d-block fwEbold mb-1">S/350.00</span>
+								<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Nuevo</span>
 							</div>
 						</div>
 					</div>
@@ -331,7 +330,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="http://placehold.it/270x300" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/img_productos/jersey2.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -340,8 +339,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold mb-1"><del>80.50 $</del>65.00 $</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Jersey Los Ángeles Lakers - Amarillo</a></span>
+								<span class="price d-block fwEbold mb-1"><del>S/60.00</del>S/50.00</span>
 								<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
 							</div>
 						</div>
@@ -350,9 +349,9 @@
 			</section>
 			<div class="container-fluid px-xl-20 px-lg-10">
 				<!-- testimonailBlock -->
-				<section class="testimonailBlock bgCover py-xl-24 py-lg-20 py-md-16 py-10" style="background-image: url(http://placehold.it/1720x560)">
+				<section class="testimonailBlock bgCover py-xl-24 py-lg-20 py-md-16 py-10" style="background-image: url(<?php echo BASE_URL;?>assets/images/fondoresena.png)">
 					<header class="col-12 mainHeader mb-9 text-center">
-						<h1 class="headingIV playfair fwEblod">What Say Client</h1>
+						<h1 class="headingIV playfair fwEblod">¿Qué dice el cliente?</h1>
 					</header>
 					<div class="container">
 						<!-- testimonailSlider -->
@@ -360,25 +359,25 @@
 							<div>
 								<div class="slide text-center mb-7">
 									<span class="icon-qoute mb-2 d-block"></span>
-									<p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com- modo consequat. </p>
-									<strong class="title d-block fwEbold mb-1">Sarah Jefferson</strong>
-									<span class="desination">BTV - Designer</span>
+									<p class="mb-7">Soy un jugador regular de basketball y siempre busco los mejores productos para mi rendimiento en la cancha. Hace poco descubrí ABC Basketball y no puedo estar más satisfecho con mi experiencia de compra.</p>
+									<strong class="title d-block fwEbold mb-1">Juan Martínez</strong>
+									<span class="desination">Jugador amateur</span>
 								</div>
 							</div>
 							<div>
 								<div class="slide text-center mb-7">
 									<span class="icon-qoute mb-2 d-block"></span>
-									<p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com- modo consequat. </p>
+									<p class="mb-7">Hace unas semanas descubrí ABC Basketball y fue todo un acierto. Estaba buscando una nueva camiseta deportiva y unos tenis de basketball para mi hijo, que acaba de empezar a jugar en un equipo local, y la variedad que tienen en su tienda online es impresionante. Encontré todo lo que necesitaba en un solo lugar</p>
 									<strong class="title d-block fwEbold mb-1">Sarah Jefferson</strong>
-									<span class="desination">BTV - Designer</span>
+									<span class="desination">Padre de familia</span>
 								</div>
 							</div>
 							<div>
 								<div class="slide text-center mb-7">
 									<span class="icon-qoute mb-2 d-block"></span>
-									<p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com- modo consequat. </p>
+									<p class="mb-7">Mi experiencia con ABC Basketball fue fantástica. Estoy buscando constantemente nuevos equipos para mis entrenamientos y aquí encontré exactamente lo que necesitaba. Compré un balón de basketball Spalding y un par de zapatillas Under Armour. Los dos productos superaron mis expectativas.</p>
 									<strong class="title d-block fwEbold mb-1">Sarah Jefferson</strong>
-									<span class="desination">BTV - Designer</span>
+									<span class="desination">Entrenador</span>
 								</div>
 							</div>
 						</div>
@@ -390,9 +389,9 @@
 				<div class="row">
 					<!-- mainHeader -->
 					<header class="col-12 mainHeader mb-4 text-center">
-						<h1 class="headingIV playfair fwEblod mb-4">Latest News</h1>
-						<span class="headerBorder d-block mb-5"><img src="images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-						<p>There are many variations of passages of lorem ipsum available </p>
+						<h1 class="headingIV playfair fwEblod mb-4">Últimas Noticias</h1>
+						<span class="headerBorder d-block mb-5"><img src="<?php echo BASE_URL;?>assets/images/noticia1.png" alt="Header Border" class="img-fluid img-bdr"></span>
+						<p>Los Cleveland Cavaliers ganaron su decimocuarto encuentro consecutivo (que además computa para la NBA Cup) y siguen sin saber lo que es la derrota esta temporada. Catorce triunfos significa, entre otras cosas, subirse a lo más bajo del podium en cuanto a arranques históricos, y compartir la tercera peana con los Celtics del 58 y los Mavericks del 2003.</p>
 					</header>
 				</div>
 				<div class="row">
@@ -405,9 +404,9 @@
 									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">20</strong> Sep</time>
 								</a>
 							</div>
-							<span class="postBy d-block mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-							<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-							<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
+							<span class="postBy d-block mb-3">Publicado por: <a href="blog-detail.html">Alejandro Gaitán</a></span>
+							<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Lesiones en la NBA, la pandemia moderna: hablamos con un experto sobre causas y soluciones</a></h2>
+							<p class="mb-0">En tres semanas de temporada, los jugadores NBA se han perdido 600 partidos por lesiones. ¿Por qué? Responde el Dr. Julio Calleja-González...</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
