@@ -1,169 +1,111 @@
 <main>
-			<!-- introBannerHolder -->
-			<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(./assets/images/panoramica4.png);">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
-							<h1 class="headingIV fwEbold playfair mb-4">Blog</h1>
-							<ul class="list-unstyled breadCrumbs d-flex justify-content-center">
-								<li class="mr-2"><a href="<?php echo BASE_URL;?>producto">Inicio</a></li>
-								<li class="mr-2">/</li>
-								<li class="active">Blog</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- twoColumns -->
-			<div class="twoColumns container pt-lg-23 pb-lg-20 pt-md-16 pb-md-4 pt-10 pb-4">
-				<div class="row">
-					<div class="col-12 col-lg-9 order-lg-3">
-						<!-- content -->
-						<article id="content">
-							<!-- newsBlogColumn -->
-							<div class="newsBlogColumn mb-md-9 mb-6">
-								<div class="imgHolder position-relative mb-6">
-									<a href="blog-detail.html">
-										<img src="http://placehold.it/870x450" alt="image description" class="img-fluid">
-									</a>
-								</div>
-								<div class="textHolder d-flex align-items-start">
-									<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block mb-1">20</strong> Sep</time>
-									<div class="alignLeft pl-sm-6 pl-3">
-										<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-										<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-										<p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
-									</div>
-								</div>
-							</div>
-							<!-- newsBlogColumn -->
-							<div class="newsBlogColumn mb-md-9 mb-6">
-								<div class="imgHolder position-relative mb-6">
-									<a href="blog-detail.html">
-										<img src="http://placehold.it/870x450" alt="image description" class="img-fluid">
-									</a>
-								</div>
-								<div class="textHolder d-flex align-items-start">
-									<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block mb-1">20</strong> Sep</time>
-									<div class="alignLeft pl-sm-6 pl-3">
-										<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-										<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-										<p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
-									</div>
-								</div>
-							</div>
-							<!-- newsBlogColumn -->
-							<div class="newsBlogColumn mb-md-9 mb-6">
-								<div class="imgHolder position-relative mb-6">
-									<a href="blog-detail.html">
-										<img src="http://placehold.it/870x450" alt="image description" class="img-fluid">
-									</a>
-								</div>
-								<div class="textHolder d-flex align-items-start">
-									<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block mb-1">20</strong> Sep</time>
-									<div class="alignLeft pl-sm-6 pl-3">
-										<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-										<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-										<p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 mb-sm-0 mb-6">
-								<!-- pagination -->
-								<ul class="list-unstyled pagination d-flex justify-content-center align-items-end">
-									<li><a href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
-									<li class="active"><a href="javascript:void(0);">1</a></li>
-									<li><a href="javascript:void(0);">2</a></li>
-									<li>...</li>
-									<li><a href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
-								</ul>
-							</div>
-						</article>
-					</div>
-					<div class="col-12 col-lg-3 order-lg-1">
-						<!-- sidebar -->
-						<aside id="sidebar">
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-9 mb-6">
-								<h3 class="headingVII fwEbold text-uppercase mb-4">Search</h3>
-								<form action="javascript:void(0);" class="searchForm position-relative border">
-									<fieldset>
-										<input type="search" class="form-control" placeholder="Search product...">
-										<button class="position-absolute"><i class="icon-search"></i></button>
-									</fieldset>
-								</form>
-							</section>
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-9 mb-6">
-								<h3 class="headingVII fwEbold text-uppercase mb-2">RECENT POSTS</h3>
-								<ul class="list-unstyled recentPostList mb-0">
-									<li><a href="javascript:void(0);" class="py-2 d-block">Blog image post</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Post with Gallery</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Post with Audio</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Post with Video</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Maecenas ultricies</a></li>
-								</ul>
-							</section>
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-9 mb-6">
-								<h3 class="headingVII fwEbold text-uppercase mb-2">RECENT COMMENTS</h3>
-								<ul class="list-unstyled recentPostList mb-0">
-									<li><a href="javascript:void(0);" class="py-2 d-block">Admin on Vivamus blandit</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Admin on Vivamus blandit</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Admin on Vivamus blandit</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Admin on Vivamus blandit</a></li>
-									<li><a href="javascript:void(0);" class="py-2 d-block">Admin on Vivamus blandit</a></li>
-								</ul>
-							</section>
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-6 mb-3">
-								<h3 class="headingVII fwEbold text-uppercase mb-4">ARCHIVES</h3>
-								<ul class="list-unstyled archiveList mb-0">
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">March 2018</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">December 2018</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">November 2018</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">September 2018</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">August 2018</a></li>
-								</ul>
-							</section>
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-5 mb-3">
-								<h3 class="headingVII fwEbold text-uppercase mb-4">CATEGORIES</h3>
-								<ul class="list-unstyled archiveList mb-0">
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Creative</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Fashion</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Image</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Photography</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Travel</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Videos</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">WordPress</a></li>
-								</ul>
-							</section>
-							<!-- widget -->
-							<section class="widget overflow-hidden mb-md-9 mb-6">
-								<h3 class="headingVII fwEbold text-uppercase mb-4">META</h3>
-								<ul class="list-unstyled archiveList mb-0">
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Log in</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Entries RSS</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">Comments RSS</a></li>
-									<li class="mb-3"><a href="javascript:void(0);" class="d-block">WordPress.org</a></li>
-								</ul>
-							</section>
-						</aside>
-					</div>
+	<!-- introBannerHolder -->
+	<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(./assets/images/panoramica4.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
+					<h1 class="headingIV fwEbold playfair mb-4">Blog</h1>
+					<ul class="list-unstyled breadCrumbs d-flex justify-content-center">
+						<li class="mr-2"><a href="<?php echo BASE_URL; ?>producto">Inicio</a></li>
+						<li class="mr-2">/</li>
+						<li class="active">Blog</li>
+					</ul>
 				</div>
 			</div>
-			<!--<div class="container mb-lg-24 mb-md-16 mb-10">
-
-				<section class="subscribeSecBlock bgCover col-12 pt-lg-24 pb-lg-12 pt-md-16 pb-md-8 py-10" style="background-image: url(http://placehold.it/1170x465)">
-					<header class="col-12 mainHeader mb-9 text-center">
-						<h1 class="headingIV playfair fwEblod mb-4">Subscribe Our Newsletter</h1>
-						<span class="headerBorder d-block mb-5"><img src="images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-						<p class="mb-6">Enter Your email address to join our mailing list and keep yourself update</p>
-					</header>
-					<form class="emailForm1 mx-auto overflow-hidden d-flex flex-wrap">
-						<input type="email" class="form-control px-4 border-0" placeholder="Enter your mail...">
-						<button type="submit" class="btn btnTheme btnShop fwEbold text-white py-3 px-4 py-md-3 px-md-4">Shop Now <i class="fas fa-arrow-right ml-2"></i></button>
-					</form>
-				</section>
-			</div>-->
+		</div>
+	</section>
+	<!-- twoColumns -->
+	<div class="twoColumns container pt-lg-23 pb-lg-20 pt-md-16 pb-md-4 pt-10 pb-4">
+		<div class="row">
+			<div class="col-12 col-lg-9 order-lg-3">
+				<!-- content -->
+				<article id="content">
+					<!-- newsBlogColumn -->
+					<div class="newsBlogColumn mb-md-9 mb-6">
+						<div class="imgHolder position-relative mb-6">
+							<a href="blog-detail.html">
+								<img src="<?php echo BASE_URL; ?>assets/images/noticia5.png" alt="image description" class="img-fluid">
+							</a>
+						</div>
+						<div class="textHolder d-flex align-items-start">
+							<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2024-11-17 20:00"> <strong class="fwEbold d-block mb-1">17</strong> Nov</time>
+							<div class="alignLeft pl-sm-6 pl-3">
+								<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Tatum y un triple sobre la bocina, Fox volvió a brillar y Lakers con 5 triunfos seguidos</a></h2>
+								<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">ESPN.com</a></span>
+								<p class="mb-0">Jayson Tatum se lució este sábado en la NBA con un triple ganador sobre la bocina para Boston Celtics, mientras que De'Aaron Fox, solo un día después de su histórico show de 60 puntos, volvió a brillar con 49 puntos para Sacramento Kings y Los Angeles Lakers encadenaron cinco triunfos seguidos.</p>
+							</div>
+						</div>
+					</div>
+					<!-- newsBlogColumn -->
+					<div class="newsBlogColumn mb-md-9 mb-6">
+						<div class="imgHolder position-relative mb-6">
+							<a href="blog-detail.html">
+								<img src="<?php echo BASE_URL; ?>assets/images/noticia6.png" alt="image description" class="img-fluid">
+							</a>
+						</div>
+						<div class="textHolder d-flex align-items-start">
+							<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2024-11-17 20:00"> <strong class="fwEbold d-block mb-1">17</strong> Nov</time>
+							<div class="alignLeft pl-sm-6 pl-3">
+								<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">De'Aaron Fox anota 49, tras sumar partido de 60 una noche antes</a></h2>
+								<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">AP</a></span>
+								<p class="mb-0">Una noche después de anotar 60 puntos en una derrota, De'Aaron Fox consiguió 49 para llevar el sábado a los Sacramento Kings al triunfo por 121-117 sobre el Utah Jazz. <br>Fox acertó 16 de 30 tiros de campo y encestó 14 de 19 desde la línea de tiros libres. Agregó además nueve asistencias y dos robos.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- newsBlogColumn -->
+					<div class="newsBlogColumn mb-md-9 mb-6">
+						<div class="imgHolder position-relative mb-6">
+							<a href="blog-detail.html">
+								<img src="<?php echo BASE_URL; ?>assets/images/noticia7.png" alt="image description" class="img-fluid">
+							</a>
+						</div>
+						<div class="textHolder d-flex align-items-start">
+							<time class="time text-center text-uppercase py-sm-3 py-1 px-1" datetime="2024-11-17 20:00"> <strong class="fwEbold d-block mb-1">17</strong> Nov</time>
+							<div class="alignLeft pl-sm-6 pl-3">
+								<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Minnesota Timberwolves vs. Phoenix Suns: previa, pronósticos y estadísticas</a></h2>
+								<span class="postBy d-block pb-sm-6 pb-2 mb-3">Post by: <a href="blog-detail.html">Jacobo León</a></span>
+								<p class="mb-0">Los Minnesota Timberwolves (7-6) reciben en el Target Center a los Phoenix Suns (9-4), en el que será el primer enfrentamiento entre ambos equipos desde que se midieron en primera ronda de los pasados playoffs, cuando los de Chris Finch barrieron a su rival con un contundente 4-0. Ahora, los dos conjuntos tratarán de sumar un triunfo que les permita mantenerse en la zona noble de la clasificación.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-sm-0 mb-6">
+						<!-- pagination -->
+						<ul class="list-unstyled pagination d-flex justify-content-center align-items-end">
+							<li><a href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
+							<li class="active"><a href="javascript:void(0);">1</a></li>
+							<li><a href="javascript:void(0);">2</a></li>
+							<li>...</li>
+							<li><a href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+			<div class="col-12 col-lg-3 order-lg-1">
+				<!-- sidebar -->
+				<aside id="sidebar">
+					<!-- widget -->
+					<section class="widget overflow-hidden mb-md-9 mb-6">
+						<h3 class="headingVII fwEbold text-uppercase mb-4">Buscar</h3>
+						<form action="javascript:void(0);" class="searchForm position-relative border">
+							<fieldset>
+								<input type="search" class="form-control" placeholder="Buscar...">
+								<button class="position-absolute"><i class="icon-search"></i></button>
+							</fieldset>
+						</form>
+					</section>
+					<!-- widget -->
+					<section class="widget overflow-hidden mb-md-9 mb-6">
+						<h3 class="headingVII fwEbold text-uppercase mb-2">Posts recientes</h3>
+						<ul class="list-unstyled recentPostList mb-0">
+							<li><a href="javascript:void(0);" class="py-2 d-block">Lesiones en la NBA, la pandemia moderna: hablamos con un experto sobre causas y soluciones</a></li>
+							<li><a href="javascript:void(0);" class="py-2 d-block">Comunicado médico del Barça tras la lesión de rodilla de Chimezie Metu</a></li>
+							<li><a href="javascript:void(0);" class="py-2 d-block">Por todo lo alto: Comité Olímpico Peruano anuncia retorno de la Federación de Basket</a></li>
+							<li><a href="javascript:void(0);" class="py-2 d-block">Asociación LGTB rechaza el veto a basquetbolista trans en Australia</a></li>
+							<li><a href="javascript:void(0);" class="py-2 d-block">Una basquetbolista transgénero no podrá competir en Australia</a></li>
+						</ul>
+					</section>
+				</aside>
+			</div>
+		</div>
+	</div>
