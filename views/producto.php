@@ -45,7 +45,7 @@
 				</div>
 			</section>
 			<!-- contactListBlock -->
-			<div class="contactListBlock container overflow-hidden pt-xl-24 pb-xl-12 pt-lg-20 pb-lg-10 pt-md-16 pb-md-4 pt-10 pb-1">
+			<div class="contactListBlock container overflow-hidden pt-xl-12 pb-xl-6 pt-lg-10 pb-lg-5 pt-md-8 pb-md-2 pt-1 pb-1">
 				<div class="row">
 					<div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
 						<!-- contactListColumn -->
@@ -89,23 +89,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="container pt-xl-11 pb-xl-12 pt-lg-10 pb-lg-10 pt-md-8 pb-md-8 pt-5 pb-5">
-				<div class="row">
-					<div class="col-12">
-						<!-- quotationBlock -->
-						<blockquote class="quotationBlock text-center d-block m-0">
-							<q class="d-block playfair mb-7">Te traemos la emoción del baloncesto directamente a tu puerta. Cada producto viene con consejos de expertos para elevar tu juego al siguiente nivel. ¡Descubre tu pasión por el baloncesto hoy!</q>
-							<cite class="d-block">
-								<img src="<?php echo BASE_URL;?>assets/images/ia.png" alt="signature" class="img-fluid mb-6">
-								<span class="d-flex flex-nowrap align-items-center justify-content-center">
-									<strong class="fwEbold mr-1">Renzo Gamboa</strong>
-									<span class="text-uppercase fwEbold pt-1">- CEO</span>
-								</span>
-							</cite>
-						</blockquote>
-					</div>
-				</div>
-			</div>
 			<!-- featureSec -->
 			<section class="featureSec container overflow-hidden pt-xl-12 pb-xl-9 pt-lg-10 pb-lg-4 pt-md-8 pb-md-2 pt-5">
 				<div class="row">
@@ -121,7 +104,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/balon2.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -130,8 +113,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">sit voluptatem</a></span>
-								<span class="price d-block fwEbold">S/68.00</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Balón Peak Wiggins Skywalker Turquesa</a></span>
+								<span class="price d-block fwEbold">S/210.00</span>
 							</div>
 						</div>
 					</div>
@@ -139,7 +122,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/balon3.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -148,8 +131,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold">58.00 $</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Balón Peak Alvarado</a></span>
+								<span class="price d-block fwEbold">S/210.00</span>
 							</div>
 						</div>
 					</div>
@@ -157,7 +140,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/mochila1.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -166,8 +149,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold">60.00 $</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Mochila Jordan Air School Roja</a></span>
+								<span class="price d-block fwEbold">S/200.00</span>
 								<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Hot</span>
 							</div>
 						</div>
@@ -176,7 +159,7 @@
 					<div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-6">
 						<div class="border">
 							<div class="imgHolder position-relative w-100 overflow-hidden">
-								<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/gorra1.png" alt="image description" class="img-fluid w-100">
 								<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 									<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
@@ -185,8 +168,8 @@
 								</ul>
 							</div>
 							<div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-								<span class="title d-block mb-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-								<span class="price d-block fwEbold"><del>80.50 $</del>65.00 $</span>
+								<span class="title d-block mb-2"><a href="shop-detail.html">Gorra New Era Dodgers Classic Blanca</a></span>
+								<span class="price d-block fwEbold"><del>S/90.00 $</del>S/79.90</span>
 								<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
 							</div>
 						</div>
@@ -213,10 +196,10 @@
 					<div class="grid-item mb-6 px-3">
 						<div class="itemCol">
 							<div class="position-relative">
-								<img src="http://placehold.it/410x410" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/sombrero1.png" alt="image description" class="img-fluid w-100">
 								<div class="hoverTextBlock position-absolute">
-									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Indoor Plant</a></h2>
-									<span class="txt d-block">( 36 item )</span>
+									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">SEATTLE SUPERSONICS CORD BUCKET HAT</a></h2>
+									<span class="txt d-block">( 15 artículos )</span>
 								</div>
 							</div>
 						</div>
@@ -225,10 +208,10 @@
 					<div class="grid-item grid-item2 mb-6 px-3">
 						<div class="itemCol">
 							<div class="position-relative">
-								<img src="http://placehold.it/845x410" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/tablero1.png" alt="image description" class="img-fluid w-100">
 								<div class="hoverTextBlock position-absolute">
-									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Tropical Plant</a></h2>
-									<span class="txt d-block">( 21 item )</span>
+									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">WILSON NBA TEAM MINI HOOP NBA LOGO</a></h2>
+									<span class="txt d-block">( 21 artículos )</span>
 								</div>
 							</div>
 						</div>
@@ -237,10 +220,10 @@
 					<div class="grid-item grid-item2 mb-6 px-3">
 						<div class="itemCol">
 							<div class="position-relative">
-								<img src="http://placehold.it/845x410" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/zapatillas2.png" alt="image description" class="img-fluid w-100">
 								<div class="hoverTextBlock position-absolute">
-									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Floor Plant</a></h2>
-									<span class="txt d-block">( 18 item )</span>
+									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Genetics Lakers</a></h2>
+									<span class="txt d-block">( 3 artículos )</span>
 								</div>
 							</div>
 						</div>
@@ -249,10 +232,10 @@
 					<div class="grid-item mb-6 px-3">
 						<div class="itemCol">
 							<div class="position-relative">
-								<img src="http://placehold.it/410x410" alt="image description" class="img-fluid w-100">
+								<img src="<?php echo BASE_URL;?>assets/images/llavero1.png" alt="image description" class="img-fluid w-100">
 								<div class="hoverTextBlock position-absolute">
-									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Table Plant</a></h2>
-									<span class="txt d-block">( 36 item )</span>
+									<h2 class="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Llavero Nike Premium Key Holder Verde</a></h2>
+									<span class="txt d-block">( 30 artículos )</span>
 								</div>
 							</div>
 						</div>
