@@ -399,13 +399,13 @@
 						<!-- newsPostColumn -->
 						<div class="newsPostColumn text-center px-2 pb-6 mb-6">
 							<div class="imgHolder position-relative mb-6">
-								<a href="blog-detail.html">
-									<img src="http://placehold.it/370x250" alt="image description" class="img-fluid w-100">
-									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">20</strong> Sep</time>
+								<a href="https://www.gigantes.com/nba/lesiones-en-la-nba-la-pandemia-moderna-hablamos-con-un-experto-sobre-causas-y-soluciones/">
+									<img src="<?php echo BASE_URL;?>assets/images/noticia2.png" alt="image description" class="img-fluid w-100">
+									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">15</strong>Nov</time>
 								</a>
 							</div>
-							<span class="postBy d-block mb-3">Publicado por: <a href="blog-detail.html">Alejandro Gaitán</a></span>
-							<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Lesiones en la NBA, la pandemia moderna: hablamos con un experto sobre causas y soluciones</a></h2>
+							<span class="postBy d-block mb-3">Publicado por: <a href="https://www.gigantes.com/nba/lesiones-en-la-nba-la-pandemia-moderna-hablamos-con-un-experto-sobre-causas-y-soluciones/">Alejandro Gaitán</a></span>
+							<h2 class="headingV fwEbold mb-2"><a href="https://www.gigantes.com/nba/lesiones-en-la-nba-la-pandemia-moderna-hablamos-con-un-experto-sobre-causas-y-soluciones/">Lesiones en la NBA, la pandemia moderna: hablamos con un experto sobre causas y soluciones</a></h2>
 							<p class="mb-0">En tres semanas de temporada, los jugadores NBA se han perdido 600 partidos por lesiones. ¿Por qué? Responde el Dr. Julio Calleja-González...</p>
 						</div>
 					</div>
@@ -413,28 +413,28 @@
 						<!-- newsPostColumn -->
 						<div class="newsPostColumn text-center px-2 pb-6 mb-6">
 							<div class="imgHolder position-relative mb-6">
-								<a href="blog-detail.html">
-									<img src="http://placehold.it/370x250" alt="image description" class="img-fluid w-100">
-									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">18</strong> Sep</time>
+								<a href="https://www.mundodeportivo.com/baloncesto/nba/20241116/1002353997/novedosa-idea-nba-revitalizar-all-star.html">
+									<img src="<?php echo BASE_URL;?>assets/images/noticia3.png" alt="image description" class="img-fluid w-100">
+									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">16</strong> Nov</time>
 								</a>
 							</div>
-							<span class="postBy d-block mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-							<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-							<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
+							<span class="postBy d-block mb-3">Publicado por: <a href="https://www.mundodeportivo.com/baloncesto/nba/20241116/1002353997/novedosa-idea-nba-revitalizar-all-star.html">Barcelona</a></span>
+							<h2 class="headingV fwEbold mb-2"><a href="https://www.mundodeportivo.com/baloncesto/nba/20241116/1002353997/novedosa-idea-nba-revitalizar-all-star.html">La novedosa idea de la NBA para revitalizar el All-Star</a></h2>
+							<p class="mb-0">La NBA se plantea un torneo con cuatro equipos para el All-Star de 2025, en un nuevo intento por revitalizar el fin de semana que reconoce a los mejores jugadores de la liga...</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
 						<!-- newsPostColumn -->
 						<div class="newsPostColumn text-center px-2 pb-6 mb-6">
 							<div class="imgHolder position-relative mb-6">
-								<a href="blog-detail.html">
-									<img src="http://placehold.it/370x250" alt="image description" class="img-fluid w-100">
-									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">21</strong> Sep</time>
+								<a href="https://www.sportingnews.com/es/nba/news/lebron-james-triple-dobles-garantia-victoria-los-angeles-lakers/1a031214ed706c54267a929b">
+									<img src="<?php echo BASE_URL;?>assets/images/noticia4.png" alt="image description" class="img-fluid w-100">
+									<time class="time text-uppercase position-absolute py-2 px-1" datetime="2019-02-03 20:00"> <strong class="fwEbold d-block">17</strong> Nov</time>
 								</a>
 							</div>
-							<span class="postBy d-block mb-3">Post by: <a href="blog-detail.html">Jane doe</a></span>
-							<h2 class="headingV fwEbold mb-2"><a href="blog-detail.html">Aptent taciti soci litora cianpen</a></h2>
-							<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
+							<span class="postBy d-block mb-3">Publicado por: <a href="https://www.sportingnews.com/es/nba/news/lebron-james-triple-dobles-garantia-victoria-los-angeles-lakers/1a031214ed706c54267a929b">Agustín Aboy</a></span>
+							<h2 class="headingV fwEbold mb-2"><a href="https://www.sportingnews.com/es/nba/news/lebron-james-triple-dobles-garantia-victoria-los-angeles-lakers/1a031214ed706c54267a929b">LeBron James es imparable: sus triple-dobles son garantía de victoria para Los Angeles Lakers</a></h2>
+							<p class="mb-0">Cada triple-doble de LeBron James está teniendo un sabor especial para Los Angeles Lakers. Y por suerte para ellos, por más que el Rey esté a unas semanas de cumplir 40 años, su capacidad de ser uno de los jugadores más completos del mundo no se ha disminuido.</p>
 						</div>
 					</div>
 				</div>
