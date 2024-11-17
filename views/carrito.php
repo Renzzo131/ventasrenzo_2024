@@ -1,16 +1,16 @@
 <main>
 			<!-- introBannerHolder -->
-			<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(http://placehold.it/1920x300);">
+			<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(<?php echo BASE_URL;?>assets/images/fondocarrito.png);">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
-							<h1 class="headingIV fwEbold playfair mb-4">My Cart</h1>
+							<h1 class="headingIV fwEbold playfair mb-4">Mi carrito</h1>
 							<ul class="list-unstyled breadCrumbs d-flex justify-content-center">
-								<li class="mr-sm-2 mr-1"><a href="home.html">Home</a></li>
+								<li class="mr-sm-2 mr-1"><a href="home.html">Inicio</a></li>
 								<li class="mr-sm-2 mr-1">/</li>
-								<li class="mr-sm-2 mr-1"><a href="shop.html">Shop</a></li>
+								<li class="mr-sm-2 mr-1"><a href="shop.html">Tienda</a></li>
 								<li class="mr-sm-2 mr-1">/</li>
-								<li class="active">My Cart</li>
+								<li class="active">Mi carrito</li>
 							</ul>
 						</div>
 					</div>
@@ -25,67 +25,67 @@
 						<table class="table cartTable">
 							<thead>
 								<tr>
-									<th scope="col" class="text-uppercase fwEbold border-top-0">product</th>
-									<th scope="col" class="text-uppercase fwEbold border-top-0">price</th>
-									<th scope="col" class="text-uppercase fwEbold border-top-0">quantity</th>
-									<th scope="col" class="text-uppercase fwEbold border-top-0">total</th>
+									<th scope="col" class="text-uppercase fwEbold border-top-0">Producto</th>
+									<th scope="col" class="text-uppercase fwEbold border-top-0">Precio</th>
+									<th scope="col" class="text-uppercase fwEbold border-top-0">Cantidad</th>
+									<th scope="col" class="text-uppercase fwEbold border-top-0">Total</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/balon3.png" alt="image description" class="img-fluid">
 										</div>
-										<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+										<span class="title pl-2"><a href="shop-detail.html">Balón Peak Alvarado</a></span>
 									</td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00</td>
 									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00<a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
 								</tr>
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/tablero1.png" alt="image description" class="img-fluid">
 										</div>
-										<span class="title pl-2"><a href="shop-detail.html">Neque Porro Quisquam</a></span>
+										<span class="title pl-2"><a href="shop-detail.html">Wilson NBA Team Mini Hoop NBA Logo</a></span>
 									</td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00</td>
 									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00<a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
 								</tr>
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/zapatillas1.png" alt="image description" class="img-fluid">
 										</div>
-										<span class="title pl-2"><a href="shop-detail.html">Aliquam Quaerat Voluptem</a></span>
+										<span class="title pl-2"><a href="shop-detail.html">Hesi Low V2 Bige</a></span>
 									</td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00</td>
 									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00<a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
 								</tr>
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/sombrero1.png" alt="image description" class="img-fluid">
 										</div>
-										<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
+										<span class="title pl-2"><a href="shop-detail.html">Seattle Supersonics Cord Bucket Hat</a></span>
 									</td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00</td>
 									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00<a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
 								</tr>
 								<tr class="align-items-center">
 									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
 										<div class="imgHolder">
-											<img src="<?php echo BASE_URL;?>assets/images/minimal.png" alt="image description" class="img-fluid">
+											<img src="<?php echo BASE_URL;?>assets/images/gorra1.png" alt="image description" class="img-fluid">
 										</div>
-										<span class="title pl-2"><a href="shop-detail.html">Sint Incidunt Utlabore</a></span>
+										<span class="title pl-2"><a href="shop-detail.html">Gorra New Era Dodgers Clásico Blanco</a></span>
 									</td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00</td>
 									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">S/180.00<a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -95,7 +95,7 @@
 					<div class="col-12">
 						<form action="javascript:void(0);" class="cartForm mb-5">
 							<div class="form-group mb-0">
-								<label for="note" class="fwEbold text-uppercase d-block mb-1">add note</label>
+								<label for="note" class="fwEbold text-uppercase d-block mb-1">Agregar nota</label>
 								<textarea id="note" class="form-control"></textarea>
 							</div>
 						</form>
@@ -104,33 +104,19 @@
 						<form action="javascript:void(0);" class="couponForm mb-md-0 mb-5">
 							<fieldset>
 								<div class="mt-holder d-inline-block align-bottom mr-lg-5 mr-0 mb-lg-0 mb-2">
-									<label for="code" class="fwEbold text-uppercase d-block mb-1">promo code</label>
+									<label for="code" class="fwEbold text-uppercase d-block mb-1">Código de promoción</label>
 									<input type="text" id="code" class="form-control">
 								</div>
-								<button type="submit" class="btn btnTheme btnCart fwEbold text-center text-white md-round py-3 px-4 py-md-3 px-md-4">Apply</button>
+								<button type="submit" class="btn btnTheme btnCart fwEbold text-center text-white md-round py-3 px-4 py-md-3 px-md-4">Aplicar</button>
 							</fieldset>
 						</form>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="d-flex justify-content-between">
-							<strong class="txt fwEbold text-uppercase mb-1">subtotal</strong>
-							<strong class="price fwEbold text-uppercase mb-1">900.00 $</strong>
+							<strong class="txt fwEbold text-uppercase mb-1">Subtotal</strong>
+							<strong class="price fwEbold text-uppercase mb-1">S/900.00</strong>
 						</div>
-						<a href="javascript:void(0);" class="btn btnTheme w-100 fwEbold text-center text-white md-round py-3 px-4 py-md-3 px-md-4">Proceed to checkout</a>
+						<a href="javascript:void(0);" class="btn btnTheme w-100 fwEbold text-center text-white md-round py-3 px-4 py-md-3 px-md-4">Pasar por la caja</a>
 					</div>
 				</div>
 			</div>
-			<!--<div class="container mb-lg-24 mb-md-16 mb-10">
-				 
-				<section class="subscribeSecBlock bgCover col-12 pt-lg-24 pb-lg-12 pt-md-16 pb-md-8 py-10" style="background-image: url(http://placehold.it/1170x465)">
-					<header class="col-12 mainHeader mb-9 text-center">
-						<h1 class="headingIV playfair fwEblod mb-4">Subscribe Our Newsletter</h1>
-						<span class="headerBorder d-block mb-5"><img src="images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-						<p class="mb-6">Enter Your email address to join our mailing list and keep yourself update</p>
-					</header>
-					<form class="emailForm1 mx-auto overflow-hidden d-flex flex-wrap">
-						<input type="email" class="form-control px-4 border-0" placeholder="Enter your mail...">
-						<button type="submit" class="btn btnTheme btnShop fwEbold text-white py-3 px-4 py-md-3 px-md-4">Shop Now <i class="fas fa-arrow-right ml-2"></i></button>
-					</form>
-				</section>
-			</div>-->
