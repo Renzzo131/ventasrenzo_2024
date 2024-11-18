@@ -21,6 +21,12 @@ if ($tipo == "registrar") {
             //RESPUESTA
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
         } else {
+            //Xargar archivos
+            $archivo = $_FILES['imagen1']['tmp_name'];
+            $destino = '../assets/img_productos/';
+            //strtolower convierte todo el texto a minusculas
+            $tipoArchivo =  strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
+
             $arrProducto = $objProducto->resgistrarProducto(
                 $codigo,
                 $nombre,
@@ -29,18 +35,14 @@ if ($tipo == "registrar") {
                 $stock,
                 $imagen_1,
                 $id_categoria,
-                $id_proveedor
+                $id_proveedor,
+                $tipoArchivo
             );
             //id es lo que me devuelve la base de datos por el procedimiento
-            if ($arrProducto->id > 0) {
+            if ($arrProducto->id_n > 0) {
+                $newid = $arrProducto->id_n;
                 $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso');
-                //Xargar archivos
-                $archivo = $_FILES['imagen1']['tmp_name'];
-                $destino = '/assets/img_productos/';
-                //strtolower convierte todo el texto a minusculas
-                $tipoArchivo =  strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
-
-                $nombre = $arrProducto->id . "." . $tipoArchivo;
+                $nombre = $arrProducto->id_n . "." . $tipoArchivo;
 
                 if (move_uploaded_file($archivo, $destino . $nombre)) {
                     $arr_imagen1 = $objProducto->actualizar_imagen($id, $nombre);
