@@ -13,10 +13,10 @@ if ($tipo == "registrar") {
         $detalle = $_POST['detalle'];
         $precio = $_POST['precio'];
         $stock = $_POST['stock'];
-        $imagen_1 = 'imagen1';
+        $imagen1 = 'imagen1';
         $id_categoria = $_POST['categoria'];
         $id_proveedor = $_POST['proveedor'];
-        if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $imagen_1 == "" || $id_categoria == "" || $id_proveedor == "") {
+        if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $imagen1 == "" || $id_categoria == "" || $id_proveedor == "") {
             //Vamos a responder con una estructura de objetos en formato JSON
             //RESPUESTA
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
@@ -33,7 +33,7 @@ if ($tipo == "registrar") {
                 $detalle,
                 $precio,
                 $stock,
-                $imagen_1,
+                $imagen1,
                 $id_categoria,
                 $id_proveedor,
                 $tipoArchivo
@@ -45,7 +45,7 @@ if ($tipo == "registrar") {
                 $nombre = $arrProducto->id_n . "." . $tipoArchivo;
 
                 if (move_uploaded_file($archivo, $destino . $nombre)) {
-                    $arr_imagen1 = $objProducto->actualizar_imagen($id, $nombre);
+/*                     $arr_imagen1 = $objProducto->actualizar_imagen($newid, $nombre); */
                 } else {
                     $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso, pero error al subir la imagen');
                 }

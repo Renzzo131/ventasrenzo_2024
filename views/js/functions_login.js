@@ -11,7 +11,7 @@ async function iniciar_sesion(){
         const datos = new FormData(formularioLogin);
         //Enviar datos hacia el controlador
         //
-        let respuesta = await fetch(base_url + 'controller/login.php?tipo=iniciar_sesion', {
+        let respuesta = await fetch(base_url + 'controller/Login.php?tipo=iniciar_sesion', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -43,11 +43,10 @@ if (document.querySelector('#formularioLogin')) {
 
 async function cerrar_sesion() {
     try {
-        let respuesta = await fetch(base_url + 'controller/login.php?tipo=cerrar_sesion',{
+        let respuesta = await fetch(base_url + 'controller/Login.php?tipo=cerrar_sesion',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
-            body: datos 
         });
         json = await respuesta.json();
         if(json.status){

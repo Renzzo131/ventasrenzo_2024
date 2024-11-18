@@ -82,25 +82,20 @@
 										<li class="nav-item">
 											<a  href="<?php echo BASE_URL;?>contacto">Contactenos</a>
 										</li>
-										<li class="nav-item">
-											<button class="btn btn-warning" onclick="cerrar_sesion();">Cerrar sesión</button>
-										</li>
-										<li class="nav-item">
-										<a><?php echo $_SESSION['sesion_ventas_nombres']?></a>
-										</li>
 									</ul>
 								</div>
 							</nav>
 						</div>
 					</div>
-					<div class="col-sm-3 col-lg-2 d-flex justify-content-center align-items-center">
-						<!-- wishListII -->
-						<ul class="nav nav-tabs wishListII pt-5 justify-content-end border-bottom-0">
-							<li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
-							<li class="nav-item"><a class="nav-link position-relative icon-cart" href="<?php echo BASE_URL;?>carrito"><span class="num rounded d-block">2</span></a></li>
-							<li class="nav-item"><a class="nav-link icon-profile" href="javascript:void(0);"></a></li>
-						</ul>
-					</div>
+					<div class="col-sm-3 col-lg-2 d-flex">
+    <ul class="nav nav-tabs wishListII pt-5 justify-content-end border-bottom-0">
+        <li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
+        <li class="nav-item"><a class="nav-link position-relative icon-cart" href="<?php echo BASE_URL;?>carrito"><span class="num rounded d-block">2</span></a></li>
+        <li class="nav-item"><a><?php echo $_SESSION['sesion_ventas_nombres']?></a></li>
+        <li class="nav-item"><button class="btn btn-light" onclick="cerrar_sesion();">Cerrar sesión</button></li>
+    </ul>
+</div>
+
 				</div>
 			</div>
 		</header>

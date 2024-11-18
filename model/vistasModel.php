@@ -22,4 +22,4 @@ class vistaModelo{
     }
 }
 
-?>s
+?>
