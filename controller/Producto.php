@@ -1,9 +1,30 @@
 <?php
 require_once "../model/productoModel.php";
 $tipo = $_REQUEST['tipo'];
-
-//instancia de la clase ProductoModel
 $objProducto = new ProductoModel();
+if ($tipo = "listar") {
+    /* echo "listar"; */
+        //Respuesta
+        $arr_Respuesta = array('status' => false, 'contenido' => '');
+        $arrProductos = $objProducto->obtener_productos();
+        if (!empty($arrProductos)) {
+            //Recorremos el array para agregar las opciones de las categorias
+            for ($i = 0; $i < count($arrProductos); $i++) {
+                $id_producto= $arrProductos[$i]->id;
+                $producto = $arrProductos[$i]->nombre;
+                $opciones = '';
+                $arrProductos[$i]->options = $opciones;
+            }
+            $arr_Respuesta['status'] = true;
+            $arr_Respuesta['contenido'] = $arrProductos;
+        }
+        //print_r($arrCategorias);
+        echo json_encode($arr_Respuesta);
+
+
+}
+//instancia de la clase ProductoModel
+
 if ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
@@ -59,21 +80,3 @@ if ($tipo == "registrar") {
 
 
 
-if ($tipo == "listar") {
-    //Respuesta
-    $arr_Respuesta = array('status' => false, 'contenido' => '');
-    $arrProductos = $objProducto->obtener_productos();
-    if (!empty($arrProductos)) {
-        //Recorremos el array para agregar las opciones de las categorias
-        for ($i = 0; $i < count($arrProductos); $i++) {
-            $id_categoria = $arrProductos[$i]->id;
-            $categoria = $arrProductos[$i]->nombre;
-            $opciones = '';
-            $arrProductos[$i]->options = $opciones;
-        }
-        $arr_Respuesta['status'] = true;
-        $arr_Respuesta['contenido'] = $arrProductos;
-    }
-    //print_r($arrCategorias);
-    echo json_encode($arr_Respuesta);
-}
