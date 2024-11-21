@@ -12,17 +12,14 @@ async function listar_productos() {
                 cont++;
                 //lo que va al lado del item. deben ser los campos de la base de datos
                 nueva_fila.innerHTML = `
-                        <th>${item.id}</th>
+                        <th>${cont}</th>
                         <td>${item.codigo}</td>
                         <td>${item.nombre}</td>
                         <td>${item.precio}</td>
                         <td>${item.stock}</td>
-                        <td>${item.id_categoria}</td>
-                        <td>${item.id_proveedor}</td>
-                        <td>
-                            <button>Editar</button>
-                            <button>Eliminar</button>
-                        </td>
+                        <td>${item.categoria.nombre}</td>
+                        <td>${item.proveedor.razon_social}</td>
+                        <td></td>
                 `; document.querySelector('#tbl_producto').appendChild(nueva_fila)
             });
         }

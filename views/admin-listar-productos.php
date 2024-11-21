@@ -1,10 +1,11 @@
 <div class="col-12">
-    <table id="tabla" border="1" style="width: 100%;" >
+    <table id="tabla" border="1" style="width: 100%; border-color: orange;" >
         <thead>
             <tr>
                 <th>Nro</th>
                 <th>Código</th>
                 <th>Nombre</th>
+                <th>precio</th>
                 <th>Stock</th>
                 <th>Categoría</th>
                 <th>Proveedor</th>

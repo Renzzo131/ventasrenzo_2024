@@ -37,7 +37,7 @@ async function registrar_compras() {
 }
 
 
-/* async function listar_producto() {
+async function listar_producto() {
     try {
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=listar');
         json = await respuesta.json();
@@ -47,7 +47,7 @@ async function registrar_compras() {
             datos.forEach(element => {
                 contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>';
             });
-            document.getElementById('id_producto').innerHTML = contenido_select; */
+            document.getElementById('id_producto').innerHTML = contenido_select;
             //Trabaja con jquery
             /*let datos = json.contenido;
             datos.forEach(element => {
@@ -56,10 +56,10 @@ async function registrar_compras() {
                     value: `${element.id}`
                 }));
             });*/
-/*         }
+        }
 
         console.log(respuesta);
     } catch (error) {
         console.log("Error al cargar categorias" + error);
     }
-} */
+}
