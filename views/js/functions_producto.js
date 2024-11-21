@@ -118,3 +118,4 @@ async function listar_proveedor() {
         console.log("Error al cargar proveedores" + error);
     }
 }
+

@@ -1,5 +1,5 @@
 <div class="col-12">
-    <table id="tabla" border="1" style="width: 100%; border-color: orange;" >
+    <table id="tabla" border="1" style="width: 100%;" >
         <thead>
             <tr>
                 <th>Nro</th>

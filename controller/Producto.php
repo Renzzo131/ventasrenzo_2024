@@ -21,7 +21,7 @@ if ($tipo == "listar") {
                 $arrProductos[$i]->categoria=$r_categoria;
 
                 $id_persona = $arrProductos[$i]->id_proveedor;
-                $r_persona = $objPersona->obtener_persona_id($id_persona, 'Proveedor');
+                $r_persona = $objPersona->obtener_persona_id($id_persona);
                 $arrProductos[$i]->proveedor=$r_persona;
 
                 $id_producto= $arrProductos[$i]->id;

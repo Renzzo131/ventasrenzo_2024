@@ -45,8 +45,8 @@ class PersonaModel
         return $sql;
     }
 
-    public function obtener_persona_id($id, $rol){
-        $respuesta = $this->conexion->query("SELECT * FROM  persona WHERE id = '{$id}' AND rol = '{$rol}'");
+    public function obtener_persona_id($id){
+        $respuesta = $this->conexion->query("SELECT * FROM  persona WHERE id = '{$id}'");
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
