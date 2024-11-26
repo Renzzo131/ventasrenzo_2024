@@ -62,16 +62,7 @@ if ($tipo == "registrar") {
             //strtolower convierte todo el texto a minusculas
             $tipoArchivo =  strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
 
-            $arrProducto = $objProducto->resgistrarProducto(
-                $codigo,
-                $nombre,
-                $detalle,
-                $precio,
-                $stock,
-                $imagen1,
-                $id_categoria,
-                $id_proveedor,
-                $tipoArchivo
+            $arrProducto = $objProducto->resgistrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen1, $id_categoria, $id_proveedor, $tipoArchivo
             );
             //id es lo que me devuelve la base de datos por el procedimiento
             if ($arrProducto->id_n > 0) {
