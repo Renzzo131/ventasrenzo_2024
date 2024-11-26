@@ -38,8 +38,8 @@
                     </div>
                 </div> -->
                 <div class="col-8">
-                    <button type="submit" class="btn btn-warning">Iniciar sesión</button>
-                    <!--<a href="<?php echo BASE_URL; ?>producto" class="btn btn-warning">Iniciar sesión</a>-->
+                    <!-- <button type="submit" class="btn btn-warning">Iniciar sesión</button> -->
+                    <a href="<?php echo BASE_URL; ?>producto" class="btn btn-warning">Iniciar sesión</a>
                     <!--<button type="submit" class="btn btn-primary">Iniciar sesión</button>-->
                 </div>
         </div>
