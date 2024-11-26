@@ -30,12 +30,12 @@
                     <label for="pass" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="pass" name="pass" required>
                 </div>
-                <div class="col-12">
+<!--                 <div class="col-12">
                     <div class="form-check">
                         <input type="checkbox" id="acepto" class="form-check-input" required>
                         <label for="acepto" class="form-check-label">Acepto los <a href="">Términos y condiciones</a></label>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-8">
                     <button type="submit" class="btn btn-warning">Iniciar sesión</button>
                     <!--<a href="<?php echo BASE_URL; ?>producto" class="btn btn-warning">Iniciar sesión</a>-->
