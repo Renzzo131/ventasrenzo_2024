@@ -43,29 +43,40 @@ async function registrar_personas() {
     //Los programadores suelen utilizar solo la letra e y no error.
 }
 
+
+
 async function listar_personas() {
     try {
         let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listar');
-        json = await respuesta.json();
+        let json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
-            let contenido_select = '<option disabled selected>Seleccione un proveedor</option>';
-            datos.forEach(element => {
-                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                //id de la fila      id de la base de datos.
+                nueva_fila.id = "fila" + item.id;
+                cont++;
+                //lo que va al lado del item. deben ser los campos de la base de datos
+                nueva_fila.innerHTML = `
+                        <th>${cont}</th>
+                        <td>${item.nro_identidad}</td>
+                        <td>${item.razon_social}</td>
+                        <td>${item.correo}</td>
+                        <td>${item.telefono}</td>
+                        <td>${item.departamento}</td>
+                        <td>${item.provincia}</td>
+                        <td>${item.distrito}</td>
+                        <td>${item.direccion}</td>
+                        <td></td>
+                `; document.querySelector('#tbl_persona').appendChild(nueva_fila)
             });
-            document.getElementById('id_persona').innerHTML = contenido_select;
-            //Trabaja con jquery
-            /*let datos = json.contenido;
-            datos.forEach(element => {
-                $('#categoria').append($('<option />',{
-                    text: `${element.nombre}`,
-                    value: `${element.id}`
-                }));
-            });*/
         }
 
-        console.log(respuesta);
     } catch (error) {
-        console.log("Error al cargar clientes" + error);
+        console.log("Error al cargar productos" + error);
     }
+}
+if (document.querySelector('#tbl_persona')) {
+    listar_personas();
 }

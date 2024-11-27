@@ -44,4 +44,4 @@
     </div>
 </div>
 <script>listar_producto()</script>
-<script>listar_personas()</script>
+<script>listar_personas_compras()</script>
