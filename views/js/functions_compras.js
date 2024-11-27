@@ -90,3 +90,37 @@ async function listar_personas_compras() {
         console.log("Error al cargar clientes" + error);
     }
 }
+
+
+async function listar_compras() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                //id de la fila      id de la base de datos.
+                nueva_fila.id = "fila" + item.id;
+                cont++;
+                //lo que va al lado del item. deben ser los campos de la base de datos
+                nueva_fila.innerHTML = `
+                        <th>${cont}</th>
+                        <td>${item.producto.nombre}</td>
+                        <td>${item.cantidad}</td>
+                        <td>${item.precio}</td>
+                        <td>${item.fecha_compra}</td>
+                        <td>${item.proveedor.razon_social}</td>
+                        <td></td>
+                `; document.querySelector('#tbl_compras').appendChild(nueva_fila)
+            });
+        }
+
+    } catch (error) {
+        console.log("Error al cargar las compras" + error);
+    }
+}
+if (document.querySelector('#tbl_compras')) {
+    listar_compras();
+}

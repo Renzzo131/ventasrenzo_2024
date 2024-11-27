@@ -50,4 +50,5 @@ class PersonaModel
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
+
 }

@@ -56,5 +56,5 @@
         </form>
     </div>
 </div>
-<script>listar_proveedor();</script>
+<script>listar_persona();</script>
 <script>listar_categoria();</script>

@@ -100,22 +100,4 @@ async function listar_categoria() {
     }
 }
 
-async function listar_proveedor() {
-    try {
-        let respuesta = await fetch(base_url + 'controller/Proveedor.php?tipo=listar');
-        json = await respuesta.json();
-        if (json.status) {
-            let datos = json.contenido;
-            let contenido_select = '<option disabled selected>Seleccione una proveedor</option>';
-            datos.forEach(element => {
-                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
-            });
-            document.getElementById('proveedor').innerHTML = contenido_select;
-        }
-
-        console.log(respuesta);
-    } catch (error) {
-        console.log("Error al cargar proveedores" + error);
-    }
-}
 

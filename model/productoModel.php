@@ -35,6 +35,13 @@ class ProductoModel
         }
         return $arrRespuesta;
     }
+
+    public function obtener_producto_id($id){
+        $respuesta = $this->conexion->query("SELECT * FROM producto WHERE id = '{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $objeto;
+    }
+
 }
 
 ?>   
