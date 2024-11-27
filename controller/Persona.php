@@ -62,4 +62,23 @@ if ($tipo == "listar"){
     //print_r($arrCategorias);
     echo json_encode($arr_Respuesta);
 }
+
+if ($tipo == "listarp"){
+    //Respuesta
+    $arr_Respuesta = array('status'=>false, 'contenido'=>'');
+    $arrPersonas = $objPersona->obtener_proveedor();
+    if (!empty($arrPersonas)){
+       //Recorremos el array para agregar las opciones de las categorias
+        for ($i=0; $i < count($arrPersonas); $i++) { 
+            $id_persona = $arrPersonas[$i]->id;
+            $razon_social = $arrPersonas[$i]->razon_social;
+            $opciones = '';
+            $arrPersonas[$i]->options = $opciones;
+       } 
+       $arr_Respuesta['status'] = true;
+       $arr_Respuesta['contenido'] = $arrPersonas;
+    }
+    //print_r($arrCategorias);
+    echo json_encode($arr_Respuesta);
+}
 ?>

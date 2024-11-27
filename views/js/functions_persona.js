@@ -83,7 +83,7 @@ if (document.querySelector('#tbl_persona')) {
 
 async function listar_proveedor() {
     try {
-        let respuesta = await fetch(base_url + 'controller/Proveedor.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listarp');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
