@@ -2861,3 +2861,47 @@ a {
 #acepto{
   accent-color: gold;
 }
+
+/*-------------LOGIN-------------*/
+.login-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.login-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  padding: 2rem;
+}
+
+.login-header {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.btn-login {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #ffca28;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+  }
+
+  .login-image, .login-form {
+      width: 100% !important;
+  }
+}
