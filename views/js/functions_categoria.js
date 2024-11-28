@@ -60,5 +60,5 @@ async function listar_categoria_lista() {
     }
 }
 if (document.querySelector('#tbl_categoria')) {
-    listar_categoria();
+    listar_categoria_lista();
 }
