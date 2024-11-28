@@ -52,4 +52,6 @@ if ($tipo == "registrar") {
     }
 }
 
+
+
 ?>

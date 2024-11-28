@@ -32,3 +32,33 @@ async function registrar_categorias() {
     }
     //Los programadores suelen utilizar solo la letra e y no error.
 }
+
+async function listar_categoria() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                //id de la fila      id de la base de datos.
+                nueva_fila.id = "fila" + item.id;
+                cont++;
+                //lo que va al lado del item. deben ser los campos de la base de datos
+                nueva_fila.innerHTML = `
+                        <th>${cont}</th>
+                        <td>${item.nombre}</td>
+                        <td>${item.detalle}</td>
+                        <td></td>
+                `; document.querySelector('#tbl_categoria').appendChild(nueva_fila)
+            });
+        }
+
+    } catch (error) {
+        console.log("Error al cargar las compras" + error);
+    }
+}
+if (document.querySelector('#tbl_categoria')) {
+    listar_categoria();
+}
