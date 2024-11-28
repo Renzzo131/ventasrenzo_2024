@@ -75,7 +75,7 @@ async function registrar_productos() {
 
 async function listar_categoria() {
     try {
-        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listarp');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
