@@ -33,7 +33,7 @@ async function registrar_categorias() {
     //Los programadores suelen utilizar solo la letra e y no error.
 }
 
-async function listar_categoria() {
+async function listar_categoria_lista() {
     try {
         let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
         let json = await respuesta.json();
