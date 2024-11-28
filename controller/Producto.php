@@ -10,32 +10,32 @@ $objPersona = new PersonaModel();
 
 if ($tipo == "listar") {
     /* echo "listar"; */
-        //Respuesta
-        $arr_Respuesta = array('status' => false, 'contenido' => '');
-        $arrProductos = $objProducto->obtener_productos();
-        if (!empty($arrProductos)) {
-            //Recorremos el array para agregar las opciones de las categorias
-            for ($i = 0; $i < count($arrProductos); $i++) {
-                $id_categoria = $arrProductos[$i]->id_categoria;
-                $r_categoria = $objCategoria->obtener_categoria_id($id_categoria);
-                $arrProductos[$i]->categoria=$r_categoria;
+    //Respuesta
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
+    $arrProductos = $objProducto->obtener_productos();
+    if (!empty($arrProductos)) {
+        //Recorremos el array para agregar las opciones de las categorias
+        for ($i = 0; $i < count($arrProductos); $i++) {
+            $id_categoria = $arrProductos[$i]->id_categoria;
+            $r_categoria = $objCategoria->obtener_categoria_id($id_categoria);
+            $arrProductos[$i]->categoria = $r_categoria;
 
-                $id_persona = $arrProductos[$i]->id_proveedor;
-                $r_persona = $objPersona->obtener_persona_id($id_persona);
-                $arrProductos[$i]->proveedor=$r_persona;
+            $id_persona = $arrProductos[$i]->id_proveedor;
+            $r_persona = $objPersona->obtener_persona_id($id_persona);
+            $arrProductos[$i]->proveedor = $r_persona;
 
-                $id_producto= $arrProductos[$i]->id;
-                $producto = $arrProductos[$i]->nombre;
-                $opciones = '';
-                $arrProductos[$i]->options = $opciones;
-            }
-            $arr_Respuesta['status'] = true;
-            $arr_Respuesta['contenido'] = $arrProductos;
+            $id_producto = $arrProductos[$i]->id;
+            $producto = $arrProductos[$i]->nombre;
+            //Edita un producto a partir del ID                                 elimina prducto a partir del id
+            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_producto.'" class="btn btn-warning"><i class="fas fa-edit"></i> Editar</a>
+                        <button onclick="eliminar_producto('.$id_producto.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</button>';
+            $arrProductos[$i]->options = $opciones;
         }
-        //print_r($arrCategorias);
-        echo json_encode($arr_Respuesta);
-
-
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] = $arrProductos;
+    }
+    //print_r($arrCategorias);
+    echo json_encode($arr_Respuesta);
 }
 //instancia de la clase ProductoModel
 
@@ -62,7 +62,16 @@ if ($tipo == "registrar") {
             //strtolower convierte todo el texto a minusculas
             $tipoArchivo =  strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
 
-            $arrProducto = $objProducto->resgistrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen1, $id_categoria, $id_proveedor, $tipoArchivo
+            $arrProducto = $objProducto->resgistrarProducto(
+                $codigo,
+                $nombre,
+                $detalle,
+                $precio,
+                $stock,
+                $imagen1,
+                $id_categoria,
+                $id_proveedor,
+                $tipoArchivo
             );
             //id es lo que me devuelve la base de datos por el procedimiento
             if ($arrProducto->id_n > 0) {
@@ -71,7 +80,7 @@ if ($tipo == "registrar") {
                 $nombre = $arrProducto->id_n . "." . $tipoArchivo;
 
                 if (move_uploaded_file($archivo, $destino . $nombre)) {
-/*                     $arr_imagen1 = $objProducto->actualizar_imagen($newid, $nombre); */
+                    /*                     $arr_imagen1 = $objProducto->actualizar_imagen($newid, $nombre); */
                 } else {
                     $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso, pero error al subir la imagen');
                 }
@@ -83,5 +92,19 @@ if ($tipo == "registrar") {
     }
 }
 
+if($tipo == 'ver'){
+    //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objProducto->verProducto($id_producto);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
+    }else{
+        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
 
-
+}

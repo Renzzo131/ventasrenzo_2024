@@ -41,6 +41,12 @@ class ProductoModel
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
+    public function verProducto($id){
+        $sql = $this->conexion->query("SELECT * FROM producto WHERE id = '{$id}'");
+        //convertimos la respuesta en un objeto
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 
 }
 

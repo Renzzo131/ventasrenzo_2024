@@ -19,7 +19,7 @@ async function listar_productos() {
                         <td>${item.stock}</td>
                         <td>${item.categoria.nombre}</td>
                         <td>${item.proveedor.razon_social}</td>
-                        <td></td>
+                        <td>${item.options}</td>
                 `; document.querySelector('#tbl_producto').appendChild(nueva_fila)
             });
         }
@@ -100,4 +100,34 @@ async function listar_categoria() {
     }
 }
 
+
+async function ver_producto(id){
+    const formData= new FormData();
+    //agregale un hijo   creale un nombre y pasale el id
+    formData.append('id_producto',id);
+    try {
+        //respndemos e indicamos hacia donde queremos enviar
+        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#imagen1').value = json.contenido.imagen1;
+            document.querySelector('#categoria').value = json.contenido.id_categoria;
+            document.querySelector('#proveedor').value = json.contenido.id_proveedor;
+        }else{
+            window.location = base_url+"admin-listar-productos";
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Oops, ocurrió un error amigo "+ error);
+    }
+}
 
