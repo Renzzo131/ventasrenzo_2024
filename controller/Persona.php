@@ -53,7 +53,8 @@ if ($tipo == "listar"){
         for ($i=0; $i < count($arrPersonas); $i++) { 
             $id_persona = $arrPersonas[$i]->id;
             $razon_social = $arrPersonas[$i]->razon_social;
-            $opciones = '';
+            $opciones = '<a href="" class="btn btn-warning"><i class="fas fa-edit"></i> Editar</a>
+                        <button  class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</button>';
             $arrPersonas[$i]->options = $opciones;
        } 
        $arr_Respuesta['status'] = true;
