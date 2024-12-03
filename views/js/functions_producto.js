@@ -119,7 +119,7 @@ async function ver_producto(id){
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
             document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#imagen1').value = json.contenido.imagen1;
+            /* document.querySelector('#imagen1').value = json.contenido.imagen1; */
             document.querySelector('#categoria').value = json.contenido.id_categoria;
             document.querySelector('#proveedor').value = json.contenido.id_proveedor;
         }else{
@@ -127,7 +127,7 @@ async function ver_producto(id){
         }
         console.log(json);
     } catch (error) {
-        console.log("Oops, ocurrió un error amigo "+ error);
+        console.log("Oops, ocurrió un error "+ error);
     }
 }
 

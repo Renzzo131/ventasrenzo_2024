@@ -53,6 +53,7 @@
 </div>
 <script>listar_proveedor();</script>
 <script>listar_categoria();</script>
+
 <script>
     //Capturar lo que viene en el lin. Dentro de la varianle views se almacena un array de dos elementos en este caso, siendo el valor el valor en la posicion n°1
     const id_p=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
