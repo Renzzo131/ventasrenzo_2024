@@ -2905,3 +2905,22 @@ a {
       width: 100% !important;
   }
 }
+
+
+
+
+.tarjeta-modulo {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.tarjeta-modulo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.icono-modulo {
+  color: #333;
+}
+.lista-actividad i {
+  color: #007bff;
+}

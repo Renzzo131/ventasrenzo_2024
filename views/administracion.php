@@ -1,33 +1,85 @@
-<h1>Panel de Administración</h1>
-
-<div class="modules col-sm-12 col-md-12 col-lg-12 col-xl-12 row d-flex justify-content-center">
-  <!-- Módulo de Usuarios -->
-  <div class="module col-sm-12 col-md-6 col-lg-2 col-xl-2" id="usuarios">
-    <div class="card">
-    <img src="https://cdn-icons-png.flaticon.com/512/4086/4086652.png" class="img-fluid" alt="Dotilla">
-      <h5>Usuarios</h5>
-      <a class="btn btn-warning">Registrar Usuario</a>
-      <a class="btn btn-warning">Ver Usuarios</a>
-    </div>
-  </div>
-
-  <!-- Módulo de Categorías -->
-  <div class="module col-sm-12 col-md-6 col-lg-2 col-xl-2" id="categorias">
-    <div class="card">
-    <img src="https://cdn-icons-png.flaticon.com/512/3843/3843517.png" class="img-fluid" alt="Dotilla">
-      <h5>Categorías</h5>
-      <a class="btn btn-warning">Registrar Categoría</a>
-      <a class="btn btn-warning">Ver Categorías</a>
-    </div>
-  </div>
-
-  <!-- Módulo de Compras -->
-  <div class="module col-sm-12 col-md-6 col-lg-2 col-xl-2" id="compras">
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3321/3321752.png" class="img-fluid" alt="Dotilla">
-      <h5>Compras a Proveedores</h5>
-      <a class="btn btn-warning">Registrar Compra</a>
-      <a class="btn btn-warning">Ver Compras</a>
-    </div>
-  </div>
-  </div>
+<main id="panel-administracion">
+        <div class="container-fluid py-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h1 class="text-center" id="titulo-panel">Panel de Administración</h1>
+                </div>
+            </div>
+            <div class="row" id="modulos-administracion">
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-usuarios" onclick="location.href='<?php echo BASE_URL;?>admin-listar-personas'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Usuarios</h5>
+                            <span class="badge badge-secondary">24 nuevos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-productos" onclick="location.href='<?php echo BASE_URL;?>admin-listar-productos'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-basketball-ball icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Productos</h5>
+                            <span class="badge badge-secondary">12 en stock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-compras" onclick="location.href='<?php echo BASE_URL;?>admin-listar-compras'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Compras</h5>
+                            <span class="badge badge-secondary">5 pendientes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-ventas" onclick="location.href='<?php echo BASE_URL;?>admin-listar-ventas'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Ventas</h5>
+                            <span class="badge badge-secondary">$45,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-sesiones" onclick="location.href='<?php echo BASE_URL;?>admin-listar-ventas'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Sesiones</h5>
+                            <span class="badge badge-secondary">3 activas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="card tarjeta-modulo" id="modulo-pagos" onclick="location.href='<?php echo BASE_URL;?>admin-listar-pagos'">
+                        <div class="card-body text-center">
+                            <i class="fas fa-money-bill-wave icono-modulo fa-3x mb-3"></i>
+                            <h5 class="card-title">Pagos</h5>
+                            <span class="badge badge-secondary">2 pendientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="actividad-reciente">
+                <div class="col-12">
+                    <div class="card" id="tarjeta-actividad">
+                        <div class="card-header">
+                            Actividad Reciente
+                        </div>
+                        <ul class="list-group list-group-flush lista-actividad">
+                            <li class="list-group-item">
+                                <i class="fas fa-user"></i> Nuevo usuario registrado: María López
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-shopping-bag"></i> Venta realizada #1245
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-bell"></i> Notificación de pago pendiente
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
