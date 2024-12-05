@@ -91,6 +91,11 @@
         <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
             <form action="" method="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
                 <div class="col-12 mb-3 mt-3">
+                <div class="col-md-4 text-start">
+            <a href="<?php echo BASE_URL; ?>admin-listar-productos" class="btn btn-danger">
+                <i class="fas fa-arrow-left me-2"></i>Regresar
+            </a>
+        </div>  
                     <center>
                         <h3>Formulario de registro de usuario</h3>
                     </center>

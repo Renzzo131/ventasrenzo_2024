@@ -51,4 +51,10 @@ class PersonaModel
         return $objeto;
     }
 
+    public function verPersona($id){
+        $sql = $this->conexion->query("SELECT * FROM persona WHERE id = '{$id}'");
+        //convertimos la respuesta en un objeto
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

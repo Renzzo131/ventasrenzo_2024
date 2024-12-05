@@ -44,6 +44,24 @@ if ($tipo == "registrar") {
     }
 }
 
+if($tipo == 'ver'){
+    //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_persona = $_POST['id_persona'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objPersona->verPersona($id_persona);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
+    }else{
+        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
+
+}
+
+
 if ($tipo == "listar"){
     //Respuesta
     $arr_Respuesta = array('status'=>false, 'contenido'=>'');
@@ -53,8 +71,8 @@ if ($tipo == "listar"){
         for ($i=0; $i < count($arrPersonas); $i++) { 
             $id_persona = $arrPersonas[$i]->id;
             $razon_social = $arrPersonas[$i]->razon_social;
-            $opciones = '<a href="" class="btn btn-warning"><i class="fas fa-edit"></i> Editar</a>
-                        <button  class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</button>';
+            $opciones = '<a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
+                        <button onclick="eliminar_producto('.$id_persona.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrPersonas[$i]->options = $opciones;
        } 
        $arr_Respuesta['status'] = true;

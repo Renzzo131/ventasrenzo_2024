@@ -1,12 +1,19 @@
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
         <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <div class="col-12 mb-3 mt-3">
-                <center><h3>Formulario de editar de producto</h3></center>
+        <div class="col-12 mb-3 mt-3 row">
+        <div class="col-md-4 text-start">
+            <a href="<?php echo BASE_URL; ?>admin-listar-productos" class="btn btn-danger">
+                <i class="fas fa-arrow-left me-2"></i>Regresar
+            </a>
+        </div>        
+        <center><h3>Formulario de editar de producto</h3></center>
+
             </div>
+                <input type="hidden" class="form-control" id="id" name="id" required>
             <div class="col-12 mb-3">
                 <label for="codigo" class="form-label">Código:</label>
-                <input type="text" class="form-control" id="codigo" name="codigo" required>
+                <input type="text" class="form-control" id="codigo" name="codigo" disabled>
             </div>
 
             <div class="col-12 mb-3">
@@ -45,7 +52,7 @@
 
             <div class="col-12 d-flex justify-content-center">
                 <button type="reset" class="btn btn-dark w-48">Cancelar</button>
-                <button type="button" class="btn btn-warning w-48" onclick="registrar_productos();">Registrar</button>
+                <button type="button" class="btn btn-warning w-48" onclick="actualizar_productos();">Actualizar</button>
             </div>
 
         </form>

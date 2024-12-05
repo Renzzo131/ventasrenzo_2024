@@ -27,8 +27,8 @@ if ($tipo == "listar") {
             $id_producto = $arrProductos[$i]->id;
             $producto = $arrProductos[$i]->nombre;
             //Edita un producto a partir del ID                                 elimina prducto a partir del id
-            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_producto.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
-                        <button onclick="eliminar_producto('.$id_producto.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
+            $opciones = '<a href="' . BASE_URL . 'editar-producto/' . $id_producto . '" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
+                        <button onclick="eliminar_producto(' . $id_producto . ')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrProductos[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -92,7 +92,7 @@ if ($tipo == "registrar") {
     }
 }
 
-if($tipo == 'ver'){
+if ($tipo == 'ver') {
     //ver si está llegando información, prueba. 
     //print_r($_POST);
     $id_producto = $_POST['id_producto'];
@@ -101,43 +101,31 @@ if($tipo == 'ver'){
     /* print_r($arr_Respuesta); */
     //si tenemos respuesta
     if (empty($arr_Respuesta)) {
-        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
-    }else{
-        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
+        $response = array('status' => false, 'mensaje' => "Error, no hay información");
+    } else {
+        $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
     }
     echo json_encode($response);
-
 }
 
-if ($tipo == "actualizar") {
-    //print_r($_POST);
-    //echo $_FILES['imagen1']['name'];
+if ($tipo == "actualizarproducto") {
+
     if ($_POST) {
-        $codigo = $_POST['codigo'];
+        $id = $_POST['id'];
         $nombre = $_POST['nombre'];
         $detalle = $_POST['detalle'];
         $precio = $_POST['precio'];
-        $stock = $_POST['stock'];
         $id_categoria = $_POST['categoria'];
         $id_proveedor = $_POST['proveedor'];
-        if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $id_categoria == "" || $id_proveedor == "") {
-            //Vamos a responder con una estructura de objetos en formato JSON
-            //RESPUESTA
+        if ($id == "" || $nombre == "" || $detalle == "" || $precio == "" || $id_categoria == "" || $id_proveedor == "") {
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
         } else {
-            $arrProducto = $objProducto->actualizar_producto(
-                $codigo,
-                $nombre,
-                $detalle,
-                $precio,
-                $stock,
-                $id_categoria,
-                $id_proveedor,
-            );
-
-            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualización exitosa');
-
-            echo json_encode($arr_Respuesta);
+            $arrProducto = $objProducto->actualizar_producto($id,
+            $nombre,
+            $detalle,
+            $precio,
+            $id_categoria,
+            $id_proveedor);
         }
     }
 }

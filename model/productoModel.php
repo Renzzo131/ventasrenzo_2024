@@ -47,10 +47,9 @@ class ProductoModel
         $sql = $sql->fetch_object();
         return $sql;
     }
-    public function actualizar_producto($codigo, $nombre, $detalle, $precio, $stock, $id_categoria, $id_proveedor){
-        $sql = $this->conexion->query("UPDATE producto SET codigo = '{$codigo}', nombre = '{$nombre}', detalle = '{$precio}', stock = '{$stock}', id_categoria = '{$id_categoria}', id_proveedor = '{$id_proveedor}';");
-        $sql = $sql->fetch_object();
-        return $sql;
+    public function actualizar_producto($id, $nombre, $detalle, $precio, $id_categoria, $id_proveedor){
+        $sql = $this->conexion->query("UPDATE producto SET  nombre = '{$nombre}', detalle = '{$detalle}', precio = '{$precio}', id_categoria = '{$id_categoria}', id_proveedor = '{$id_proveedor}' WHERE id = '{$id}';");
+        return 1;
     }
 
 }

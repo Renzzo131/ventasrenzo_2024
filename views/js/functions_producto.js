@@ -115,6 +115,7 @@ async function ver_producto(id){
         });
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id').value = json.contenido.id;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
@@ -134,22 +135,22 @@ async function ver_producto(id){
 
 
 async function actualizar_productos() {
+/*     let id = document.getElementById('id').value;
     let codigo = document.getElementById('codigo').value;
     let nombre = document.querySelector('#nombre').value;
     let detalle = document.querySelector('#detalle').value;
     let precio = document.querySelector('#precio').value;
-    let stock = document.querySelector('#stock').value;
+    let imagen1 = document.querySelector('#imagen1').value;
     let categoria = document.querySelector('#categoria').value;
     let proveedor = document.querySelector('#proveedor').value;
     //Estamos validando que no se envien campos vacios
-    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || proveedor == "") {
+    if (id == "" || codigo == "" || nombre == "" || detalle == "" || precio == ""|| imagen1 == ""|| categoria == "" || proveedor == "") {
         alert("Error. Campos vacíos");
         return;
-    }
-
+    } */
     try {
         const datos = new FormData(formil);
-        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizarproducto', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',

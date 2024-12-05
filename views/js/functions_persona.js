@@ -99,3 +99,41 @@ async function listar_proveedor() {
         console.log("Error al cargar proveedores" + error);
     }
 }
+
+
+async function ver_persona(id){
+    const formData= new FormData();
+    //agregale un hijo   creale un nombre y pasale el id
+    formData.append('id_persona',id);
+    try {
+        //respndemos e indicamos hacia donde queremos enviar
+        let respuesta = await fetch(base_url+'controller/Persona.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#id').value = json.contenido.id;
+            document.querySelector('#nro_identidad').value = json.contenido.nro_identidad;
+            document.querySelector('#razon_social').value = json.contenido.razon_social;
+            document.querySelector('#telefono').value = json.contenido.telefono;
+            document.querySelector('#departamento').value = json.contenido.departamento;
+            document.querySelector('#provincia').value = json.contenido.provincia;
+            document.querySelector('#distrito').value = json.contenido.distrito;
+            document.querySelector('#cod_postal').value = json.contenido.cod_postal;
+            document.querySelector('#direccion').value = json.contenido.direccion;
+            document.querySelector('#rol').value = json.contenido.rol;
+            document.querySelector('#correo').value = json.contenido.correo;
+            document.querySelector('#password').value = json.contenido.password;
+            document.querySelector('#estado').value = json.contenido.estado;
+            document.querySelector('#fecha').value = json.contenido.fecha;
+        }else{
+            window.location = base_url+"admin-listar-productos";
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Oops, ocurrió un error "+ error);
+    }
+}
