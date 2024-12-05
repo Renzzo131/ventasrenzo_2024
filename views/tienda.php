@@ -53,7 +53,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -73,7 +73,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -91,7 +91,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -110,7 +110,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -129,7 +129,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -148,7 +148,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -167,7 +167,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -185,7 +185,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -204,7 +204,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -223,7 +223,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -242,7 +242,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>
@@ -260,7 +260,7 @@
 											<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
 												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
-												<li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-eye d-block"></a></li>
+												<li class="mr-2 overflow-hidden"><a href="<?php echo BASE_URL;?>detalle" class="icon-eye d-block"></a></li>
 												<li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
 											</ul>
 										</div>

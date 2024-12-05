@@ -91,8 +91,9 @@
     <ul class="nav nav-tabs wishListII pt-5 justify-content-end border-bottom-0">
         <li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
         <li class="nav-item"><a class="nav-link position-relative icon-cart" href="<?php echo BASE_URL;?>carrito"><span class="num rounded d-block">2</span></a></li>
-        <li class="nav-item"><a class="nav-link"><?php echo $_SESSION['sesion_ventas_nombres']?></a></li>
-        <li class="nav-item"><a class="nav-link" onclick="cerrar_sesion();">Cerrar sesión</a></li>
+        <li class="nav-item"><a href="<?php echo BASE_URL;?>perfil"><?php echo $_SESSION['sesion_ventas_nombres']?></a></li>
+        <li class="nav-item"><a class="btn btn-warning" class="" onclick="cerrar_sesion();"><i class="fas fa-sign-out-alt me-2"></i>
+		Cerrar sesión</a></li>
     </ul>
 </div>
 
