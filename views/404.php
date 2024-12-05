@@ -72,7 +72,7 @@
         <h1>404</h1>
         <h2>¡Ups! Canasta fuera de lugar</h2>
         <p>La página que buscas no está disponible. Es como intentar encestar desde fuera de la cancha.</p>
-        <a href="../index.php" class="btn">Regresar al inicio</a>
+        <a href="<?php echo BASE_URL; ?>producto" class="btn">Regresar al inicio</a>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

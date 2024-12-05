@@ -112,10 +112,17 @@ a {
 }
 
 .btn {
-  font-size: 20px;
-  line-height: 30px;
-  margin: 10px;
+  font-size: 14px; /* Texto más pequeño */
+  line-height: 1.2; /* Altura de línea más compacta */
+  padding: 8px 15px; /* Menos relleno */
+  width: auto; /* Ajuste automático */
+  margin: 5px; /* Separación moderada */
+  border: none; /* Sin bordes */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  cursor: pointer; /* Indicador de clic */
+  transition: background-color 0.3s ease;
 }
+
 
 .btn .fas {
   font-size: 14px;
@@ -2212,12 +2219,11 @@ a {
   height: 50px;
   font-size: 13px;
   line-height: 15px;
-  color: #c8c8c8;
   background: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #949494;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 1;
   padding: 9px 14px;
 }
 

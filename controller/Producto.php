@@ -27,8 +27,8 @@ if ($tipo == "listar") {
             $id_producto = $arrProductos[$i]->id;
             $producto = $arrProductos[$i]->nombre;
             //Edita un producto a partir del ID                                 elimina prducto a partir del id
-            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_producto.'" class="btn btn-warning"><i class="fas fa-edit"></i> Editar</a>
-                        <button onclick="eliminar_producto('.$id_producto.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</button>';
+            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_producto.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
+                        <button onclick="eliminar_producto('.$id_producto.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrProductos[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;

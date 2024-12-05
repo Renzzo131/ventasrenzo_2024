@@ -58,3 +58,4 @@
 </div>
 <script>listar_proveedor();</script>
 <script>listar_categoria();</script>
+

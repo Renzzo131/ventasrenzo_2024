@@ -50,7 +50,7 @@ async function listar_categoria_lista() {
                         <th>${cont}</th>
                         <td>${item.nombre}</td>
                         <td>${item.detalle}</td>
-                        <td></td>
+                        <td>${item.options}</td>
                 `; document.querySelector('#tbl_categoria').appendChild(nueva_fila)
             });
         }

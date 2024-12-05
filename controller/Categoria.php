@@ -14,7 +14,8 @@ if ($tipo == "listar"){
         for ($i=0; $i < count($arrCategorias); $i++) { 
             $id_categoria = $arrCategorias[$i]->id;
             $categoria = $arrCategorias[$i]->nombre;
-            $opciones = '';
+            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_categoria.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
+                        <button onclick="eliminar_producto('.$id_categoria.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrCategorias[$i]->options = $opciones;
        } 
        $arr_Respuesta['status'] = true;
