@@ -131,3 +131,39 @@ async function ver_producto(id){
     }
 }
 
+
+
+async function actualizar_productos() {
+    let codigo = document.getElementById('codigo').value;
+    let nombre = document.querySelector('#nombre').value;
+    let detalle = document.querySelector('#detalle').value;
+    let precio = document.querySelector('#precio').value;
+    let stock = document.querySelector('#stock').value;
+    let categoria = document.querySelector('#categoria').value;
+    let proveedor = document.querySelector('#proveedor').value;
+    //Estamos validando que no se envien campos vacios
+    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || categoria == "" || proveedor == "") {
+        alert("Error. Campos vacíos");
+        return;
+    }
+
+    try {
+        const datos = new FormData(formil);
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
+        console.log(json);
+
+    } catch (error) {
+        console.log("Oops, ocurrió un error " + error);
+    }
+}

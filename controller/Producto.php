@@ -108,3 +108,36 @@ if($tipo == 'ver'){
     echo json_encode($response);
 
 }
+
+if ($tipo == "actualizar") {
+    //print_r($_POST);
+    //echo $_FILES['imagen1']['name'];
+    if ($_POST) {
+        $codigo = $_POST['codigo'];
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+        $precio = $_POST['precio'];
+        $stock = $_POST['stock'];
+        $id_categoria = $_POST['categoria'];
+        $id_proveedor = $_POST['proveedor'];
+        if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $id_categoria == "" || $id_proveedor == "") {
+            //Vamos a responder con una estructura de objetos en formato JSON
+            //RESPUESTA
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+        } else {
+            $arrProducto = $objProducto->actualizar_producto(
+                $codigo,
+                $nombre,
+                $detalle,
+                $precio,
+                $stock,
+                $id_categoria,
+                $id_proveedor,
+            );
+
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualización exitosa');
+
+            echo json_encode($arr_Respuesta);
+        }
+    }
+}
