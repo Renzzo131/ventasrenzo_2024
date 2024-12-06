@@ -115,7 +115,8 @@ async function ver_producto(id){
         });
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#id').value = json.contenido.id;
+            document.querySelector('#id_producto').value = json.contenido.id;
+            document.querySelector('#img').value = json.contenido.imagen_1;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
@@ -123,6 +124,7 @@ async function ver_producto(id){
             /* document.querySelector('#imagen1').value = json.contenido.imagen1; */
             document.querySelector('#categoria').value = json.contenido.id_categoria;
             document.querySelector('#proveedor').value = json.contenido.id_proveedor;
+
         }else{
             window.location = base_url+"admin-listar-productos";
         }
@@ -133,24 +135,10 @@ async function ver_producto(id){
 }
 
 
-
-async function actualizar_productos() {
-/*     let id = document.getElementById('id').value;
-    let codigo = document.getElementById('codigo').value;
-    let nombre = document.querySelector('#nombre').value;
-    let detalle = document.querySelector('#detalle').value;
-    let precio = document.querySelector('#precio').value;
-    let imagen1 = document.querySelector('#imagen1').value;
-    let categoria = document.querySelector('#categoria').value;
-    let proveedor = document.querySelector('#proveedor').value;
-    //Estamos validando que no se envien campos vacios
-    if (id == "" || codigo == "" || nombre == "" || detalle == "" || precio == ""|| imagen1 == ""|| categoria == "" || proveedor == "") {
-        alert("Error. Campos vacíos");
-        return;
-    } */
+async function actualizar_producto() {
+    const datos = new FormData(formil);
     try {
-        const datos = new FormData(formil);
-        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizarproducto', {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -163,8 +151,7 @@ async function actualizar_productos() {
             swal("Registro", json.mensaje, "error")
         }
         console.log(json);
+    } catch (e) {
 
-    } catch (error) {
-        console.log("Oops, ocurrió un error " + error);
     }
 }
