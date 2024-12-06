@@ -11,11 +11,11 @@
                     <h3>Formulario de registro de usuario</h3>
                 </center>
             </div>
-            <input type="hidden" class="form-control" id="id" name="id" required>
+            <input type="hidden" class="form-control" id="id_persona" name="id_persona" required>
             <!-- Número de identidad -->
             <div class="col-12 mb-3">
                 <label for="nro_identidad" class="form-label">Número de identidad:</label>
-                <input type="text" class="form-control" id="nro_identidad" name="nro_identidad" required
+                <input type="text" class="form-control" id="nro_identidad" name="nro_identidad" disabled
                     pattern="\d{8,15}" title="El número de identidad debe tener entre 8 y 15 dígitos.">
             </div>
 
@@ -71,7 +71,7 @@
                     <option value="" disabled selected>Selecciona un rol</option>
                     <option value="Administrador">Administrador</option>
                     <option value="Proveedor">Proveedor</option>
-                    <option value="Proveedor">Vendedor</option>
+                    <option value="Vendedor">Vendedor</option>
                     <option value="Cliente">Cliente</option>
                 </select>
             </div>
@@ -85,13 +85,16 @@
 
             <!-- Estado oculto -->
             <div class="col-12 mb-3">
-                <input type="hidden" class="form-control" id="estado" name="estado" value="1">
+                <select name="estado" id="estado" class="form-control">
+                    <option value="1">Activo</option>
+                    <option value="2">Inactivo</option>
+                </select>
             </div>
 
             <!-- Botones -->
             <div class="col-12 d-flex justify-content-center">
                 <button type="reset" class="btn btn-dark w-48">Cancelar</button>
-                <button type="button" class="btn btn-warning w-48" onclick="actualizar_personas();">Actualizar</button>
+                <button type="button" class="btn btn-warning w-48" onclick="actualizar_persona();">Actualizar</button>
             </div>
         </form>
     </div>

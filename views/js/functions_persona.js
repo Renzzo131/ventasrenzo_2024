@@ -115,7 +115,7 @@ async function ver_persona(id){
         });
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#id').value = json.contenido.id;
+            document.querySelector('#id_persona').value = json.contenido.id;
             document.querySelector('#nro_identidad').value = json.contenido.nro_identidad;
             document.querySelector('#razon_social').value = json.contenido.razon_social;
             document.querySelector('#telefono').value = json.contenido.telefono;
@@ -126,14 +126,33 @@ async function ver_persona(id){
             document.querySelector('#direccion').value = json.contenido.direccion;
             document.querySelector('#rol').value = json.contenido.rol;
             document.querySelector('#correo').value = json.contenido.correo;
-            document.querySelector('#password').value = json.contenido.password;
             document.querySelector('#estado').value = json.contenido.estado;
-            document.querySelector('#fecha').value = json.contenido.fecha;
         }else{
             window.location = base_url+"admin-listar-productos";
         }
         console.log(json);
     } catch (error) {
         console.log("Oops, ocurrió un error "+ error);
+    }
+}
+
+async function actualizar_persona() {
+    const datos = new FormData(formil);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
+        console.log(json);
+    } catch (e) {
+
     }
 }

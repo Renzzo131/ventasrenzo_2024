@@ -100,4 +100,31 @@ if ($tipo == "listarp"){
     //print_r($arrCategorias);
     echo json_encode($arr_Respuesta);
 }
+
+
+if ($tipo == "actualizar") {
+    $id_persona = $_POST['id_persona'];
+    $razon_social = $_POST['razon_social'];
+    $telefono = $_POST['telefono'];
+    $departamento = $_POST['departamento'];
+    $provincia = $_POST['provincia'];
+    $distrito = $_POST['distrito'];
+    $cod_postal = $_POST['cod_postal'];
+    $direccion = $_POST['direccion'];
+    $rol = $_POST['rol'];
+    $correo = $_POST['correo'];
+    $estado = $_POST['estado'];
+    if ($id_persona == "" || $razon_social == "" || $telefono == "" || $departamento == "" || $provincia == ""|| $distrito == ""|| $cod_postal == ""|| $direccion == ""|| $rol == ""|| $correo == ""|| $estado == "") {
+        $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+    } else {
+        $arrPersona = $objPersona->actualizarPersona($id_persona, $razon_social, $telefono, $departamento, $provincia, $distrito,$cod_postal,$direccion,$rol,$correo,$estado);
+        if ($arrPersona->p_id > 0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar persona');
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
+
 ?>

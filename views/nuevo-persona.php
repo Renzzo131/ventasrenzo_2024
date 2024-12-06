@@ -160,7 +160,7 @@
                         <option value="" disabled selected>Selecciona un rol</option>
                         <option value="Administrador">Administrador</option>
                         <option value="Proveedor">Proveedor</option>
-                        <option value="Proveedor">Vendedor</option>
+                        <option value="Vendedor">Vendedor</option>
                         <option value="Cliente">Cliente</option>
                     </select>
                 </div>
