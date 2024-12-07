@@ -18,7 +18,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="login-container row g-0">
-                    <div class="col-md-6 login-image" style="background-image: url('<?php echo BASE_URL; ?>assets/images/11.jpg');">
+                    <div class="col-md-6 login-image" style="background-image: url('<?php echo BASE_URL; ?>assets/images/loginprincipal.webp');">
                         <!-- Imagen de fondo definida por CSS -->
                     </div>
 
