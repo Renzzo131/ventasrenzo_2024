@@ -4,7 +4,26 @@ $tipo = $_REQUEST['tipo'];
 
 //instancia de la clase ProductoModel
 $objPersona = new PersonaModel();
-if ($tipo == "registrar") {
+
+if($tipo == 'ver'){
+    //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_persona = $_POST['id_persona'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objPersona->verPersona($id_persona);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
+    }else{
+        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
+
+}
+
+
+elseif ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
         if ($_POST) {
@@ -44,25 +63,9 @@ if ($tipo == "registrar") {
     }
 }
 
-if($tipo == 'ver'){
-    //ver si está llegando información, prueba. 
-    //print_r($_POST);
-    $id_persona = $_POST['id_persona'];
-    //funcion flecha llamamos a una funcion
-    $arr_Respuesta = $objPersona->verPersona($id_persona);
-    /* print_r($arr_Respuesta); */
-    //si tenemos respuesta
-    if (empty($arr_Respuesta)) {
-        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
-    }else{
-        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
-    }
-    echo json_encode($response);
-
-}
 
 
-if ($tipo == "listar"){
+elseif ($tipo == "listar"){
     //Respuesta
     $arr_Respuesta = array('status'=>false, 'contenido'=>'');
     $arrPersonas = $objPersona->obtener_personas();
@@ -82,7 +85,7 @@ if ($tipo == "listar"){
     echo json_encode($arr_Respuesta);
 }
 
-if ($tipo == "listarp"){
+elseif ($tipo == "listarp"){
     //Respuesta
     $arr_Respuesta = array('status'=>false, 'contenido'=>'');
     $arrPersonas = $objPersona->obtener_proveedor();
@@ -102,7 +105,7 @@ if ($tipo == "listarp"){
 }
 
 
-if ($tipo == "actualizar") {
+elseif ($tipo == "actualizar") {
     $id_persona = $_POST['id_persona'];
     $razon_social = $_POST['razon_social'];
     $telefono = $_POST['telefono'];

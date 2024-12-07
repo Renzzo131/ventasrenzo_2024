@@ -1,6 +1,6 @@
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
-        <form action="" method="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <form action="" method="" id="frmEditarPersona" class="formil col-12 col-sm-10 col-md-8 col-lg-6">
             <div class="col-12 mb-3 mt-3">
                 <div class="col-md-4 text-start">
                     <a href="<?php echo BASE_URL; ?>admin-listar-personas" class="btn btn-danger">
@@ -99,6 +99,7 @@
         </form>
     </div>
 </div>
+<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 <script>
     //Capturar lo que viene en el lin. Dentro de la varianle views se almacena un array de dos elementos en este caso, siendo el valor el valor en la posicion n°1
     const id_per = <?php $pagina = explode("/", $_GET['views']);

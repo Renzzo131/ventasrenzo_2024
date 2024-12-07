@@ -50,7 +50,7 @@ async function registrar_productos() {
     try {
         //Capturamos datos del html
         //Estamos creando un formulario
-        const datos = new FormData(formil);
+        const datos = new FormData(frmNuevoProducto);
         //Enviar datos hacia el controlador
         //
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=registrar', {
@@ -99,6 +99,25 @@ async function listar_categoria() {
         console.log("Error al cargar categorias" + error);
     }
 }
+async function listar_proveedor() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listarp');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option disabled selected>Seleccione una proveedor</option>';
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+            });
+            document.getElementById('proveedor').innerHTML = contenido_select;
+        }
+
+        console.log(respuesta);
+    } catch (error) {
+        console.log("Error al cargar proveedores" + error);
+    }
+}
+
 
 
 async function ver_producto(id){
@@ -136,7 +155,7 @@ async function ver_producto(id){
 
 
 async function actualizar_producto() {
-    const datos = new FormData(formil);
+    const datos = new FormData(frmEditarProducto);
     try {
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
             method: 'POST',

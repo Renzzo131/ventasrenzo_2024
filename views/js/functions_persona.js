@@ -20,7 +20,7 @@ async function registrar_personas() {
     try {
         //Capturamos datos del html
         //Estamos creando un formulario
-        const datos = new FormData(formil);
+        const datos = new FormData(frmNuevoPersona);
         //Enviar datos hacia el controlador
         //
         let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=registrar', {
@@ -81,24 +81,6 @@ if (document.querySelector('#tbl_persona')) {
     listar_personas();
 }
 
-async function listar_proveedor() {
-    try {
-        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listarp');
-        json = await respuesta.json();
-        if (json.status) {
-            let datos = json.contenido;
-            let contenido_select = '<option disabled selected>Seleccione una proveedor</option>';
-            datos.forEach(element => {
-                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
-            });
-            document.getElementById('proveedor').innerHTML = contenido_select;
-        }
-
-        console.log(respuesta);
-    } catch (error) {
-        console.log("Error al cargar proveedores" + error);
-    }
-}
 
 
 async function ver_persona(id){
@@ -137,7 +119,7 @@ async function ver_persona(id){
 }
 
 async function actualizar_persona() {
-    const datos = new FormData(formil);
+    const datos = new FormData(frmEditarPersona);
     try {
         let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=actualizar', {
             method: 'POST',

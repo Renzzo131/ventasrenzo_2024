@@ -1,6 +1,6 @@
 <div class="container mt-4 mb-4">
     <div class="row justify-content-center">
-        <form action="" id="formil" class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <form action="" id="frmNuevoProducto" class="formil col-12 col-sm-10 col-md-8 col-lg-6">
         <div class="col-12 mb-3 mt-3">
         <div class="col-md-4 text-start">
             <a href="<?php echo BASE_URL; ?>admin-listar-productos" class="btn btn-danger">
@@ -61,6 +61,7 @@
         </form>
     </div>
 </div>
+<script src="<?php echo BASE_URL;?>views/js/functions_producto.js"></script>
 <script>listar_proveedor();</script>
 <script>listar_categoria();</script>
 

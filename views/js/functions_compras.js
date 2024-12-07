@@ -13,7 +13,7 @@ async function registrar_compras() {
     try {
         //Capturamos datos del html
         //Estamos creando un formulario
-        const datos = new FormData(document.getElementById('formil'));
+        const datos = new FormData(document.getElementById('frmNuevoCompra'));
         //Enviar datos hacia el controlador
         //
         let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=registrar', {
@@ -36,6 +36,38 @@ async function registrar_compras() {
     //Los programadores suelen utilizar solo la letra e y no error.
 }
 
+async function listar_compras() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                //id de la fila      id de la base de datos.
+                nueva_fila.id = "fila" + item.id;
+                cont++;
+                //lo que va al lado del item. deben ser los campos de la base de datos
+                nueva_fila.innerHTML = `
+                        <th>${cont}</th>
+                        <td>${item.producto.nombre}</td>
+                        <td>${item.cantidad}</td>
+                        <td>${item.precio}</td>
+                        <td>${item.fecha_compra}</td>
+                        <td>${item.proveedor.razon_social}</td>
+                        <td>${item.options}</td>
+                `; document.querySelector('#tbl_compras').appendChild(nueva_fila)
+            });
+        }
+
+    } catch (error) {
+        console.log("Error al cargar las compras" + error);
+    }
+}
+if (document.querySelector('#tbl_compras')) {
+    listar_compras();
+}
 
 async function listar_producto() {
     try {
@@ -66,7 +98,7 @@ async function listar_producto() {
 
 async function listar_personas_compras() {
     try {
-        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listarp');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
@@ -75,14 +107,7 @@ async function listar_personas_compras() {
                 contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
             });
             document.getElementById('id_persona').innerHTML = contenido_select;
-            //Trabaja con jquery
-            /*let datos = json.contenido;
-            datos.forEach(element => {
-                $('#categoria').append($('<option />',{
-                    text: `${element.nombre}`,
-                    value: `${element.id}`
-                }));
-            });*/
+
         }
 
         console.log(respuesta);
@@ -91,36 +116,54 @@ async function listar_personas_compras() {
     }
 }
 
-
-async function listar_compras() {
+async function ver_compra(id){
+    const formData= new FormData();
+    //agregale un hijo   creale un nombre y pasale el id
+    formData.append('id_compra',id);
     try {
-        let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=listar');
-        let json = await respuesta.json();
+        //respndemos e indicamos hacia donde queremos enviar
+        let respuesta = await fetch(base_url+'controller/Compras.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
         if (json.status) {
-            let datos = json.contenido;
-            let cont = 0;
-            datos.forEach(item => {
-                let nueva_fila = document.createElement("tr");
-                //id de la fila      id de la base de datos.
-                nueva_fila.id = "fila" + item.id;
-                cont++;
-                //lo que va al lado del item. deben ser los campos de la base de datos
-                nueva_fila.innerHTML = `
-                        <th>${cont}</th>
-                        <td>${item.producto.nombre}</td>
-                        <td>${item.cantidad}</td>
-                        <td>${item.precio}</td>
-                        <td>${item.fecha_compra}</td>
-                        <td>${item.proveedor.razon_social}</td>
-                        <td></td>
-                `; document.querySelector('#tbl_compras').appendChild(nueva_fila)
-            });
+            document.querySelector('#id_compra').value = json.contenido.id;
+            document.querySelector('#id_producto').value = json.contenido.id_producto;
+            document.querySelector('#cantidad').value = json.contenido.cantidad;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#fecha_compra').value = json.contenido.fecha_compra;
+            document.querySelector('#id_persona').value = json.contenido.id_persona;
+        }else{
+            window.location = base_url+"admin-listar-productos";
         }
-
+        console.log(json);
     } catch (error) {
-        console.log("Error al cargar las compras" + error);
+        console.log("Oops, ocurrió un error "+ error);
     }
 }
-if (document.querySelector('#tbl_compras')) {
-    listar_compras();
+
+
+async function actualizar_compra() {
+    const datos = new FormData(frmEditarCompra);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
+        console.log(json);
+    } catch (e) {
+
+    }
 }
+

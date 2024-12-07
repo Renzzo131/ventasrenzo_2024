@@ -26,10 +26,10 @@
 		//Minusculas en javascript y las mayusculas en php.
 		const base_url = '<?php echo BASE_URL;?>';
 	</script>
-	<script src="<?php echo BASE_URL;?>views/js/functions_producto.js"></script>
-	<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
-	<script src="<?php echo BASE_URL;?>views/js/functions_categoria.js"></script>
-	<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
+	
+
+
+
 	<script src="<?php echo BASE_URL;?>views/js/functions_login.js"></script>
 </head>
 <body>

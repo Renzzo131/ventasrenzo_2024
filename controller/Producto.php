@@ -8,7 +8,25 @@ $objProducto = new ProductoModel();
 $objCategoria = new CategoriaModel();
 $objPersona = new PersonaModel();
 
-if ($tipo == "listar") {
+
+if ($tipo == 'ver') {
+    //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objProducto->verProducto($id_producto);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false, 'mensaje' => "Error, no hay información");
+    } else {
+        $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
+    }
+    echo json_encode($response);
+}
+
+
+elseif ($tipo == "listar") {
     /* echo "listar"; */
     //Respuesta
     $arr_Respuesta = array('status' => false, 'contenido' => '');
@@ -39,7 +57,7 @@ if ($tipo == "listar") {
 }
 //instancia de la clase ProductoModel
 
-if ($tipo == "registrar") {
+elseif ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
     if ($_POST) {
@@ -92,23 +110,9 @@ if ($tipo == "registrar") {
     }
 }
 
-if ($tipo == 'ver') {
-    //ver si está llegando información, prueba. 
-    //print_r($_POST);
-    $id_producto = $_POST['id_producto'];
-    //funcion flecha llamamos a una funcion
-    $arr_Respuesta = $objProducto->verProducto($id_producto);
-    /* print_r($arr_Respuesta); */
-    //si tenemos respuesta
-    if (empty($arr_Respuesta)) {
-        $response = array('status' => false, 'mensaje' => "Error, no hay información");
-    } else {
-        $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
-    }
-    echo json_encode($response);
-}
 
-if ($tipo == "actualizar") {
+
+elseif ($tipo == "actualizar") {
     //print_r($_POST);
     //print_r($_FILES['imagen']['tmp_name']);
 

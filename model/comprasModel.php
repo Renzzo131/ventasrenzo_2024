@@ -30,4 +30,17 @@ class ComprasModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+
+    public function verCompra($id){
+        $sql = $this->conexion->query("SELECT * FROM compras WHERE id = '{$id}'");
+        //convertimos la respuesta en un objeto
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
+
+    public function actualizarCompra($id_compra, $id_producto, $cantidad, $precio, $fecha_compra, $id_persona){
+        $sql = $this->conexion->query("CALL actualizar_compra('{$id_compra}','{$id_producto}','{$cantidad}','{$precio}','{$fecha_compra}','{$id_persona}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

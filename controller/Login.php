@@ -30,7 +30,7 @@ if($tipo == "iniciar_sesion"){
     echo json_encode($arrResponse);
 }
 
-else if ($tipo == "cerrar_sesion") {
+elseif ($tipo == "cerrar_sesion") {
     session_start();
     session_unset();
     session_destroy();

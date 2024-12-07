@@ -25,12 +25,7 @@ if ($tipo == "listar"){
     echo json_encode($arr_Respuesta);
 }
 
-require_once "../model/categoriaModel.php";
-$tipo = $_REQUEST['tipo'];
-
-//instancia de la clase ProductoModel
-$objCategoria = new CategoriaModel();
-if ($tipo == "registrar") {
+elseif  ($tipo == "registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen1']['name'];
         if ($_POST) {
