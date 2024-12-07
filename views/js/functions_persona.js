@@ -110,7 +110,7 @@ async function ver_persona(id){
             document.querySelector('#correo').value = json.contenido.correo;
             document.querySelector('#estado').value = json.contenido.estado;
         }else{
-            window.location = base_url+"admin-listar-productos";
+            window.location = base_url+"admin-listar-personas";
         }
         console.log(json);
     } catch (error) {

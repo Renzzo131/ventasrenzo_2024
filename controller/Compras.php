@@ -105,7 +105,7 @@ elseif ($tipo == "actualizar") {
         if ($arrCompras->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
         } else {
-            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar persona');
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar compra');
         }
     }
     echo json_encode($arr_Respuesta);

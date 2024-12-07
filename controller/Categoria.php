@@ -14,7 +14,7 @@ if ($tipo == "listar"){
         for ($i=0; $i < count($arrCategorias); $i++) { 
             $id_categoria = $arrCategorias[$i]->id;
             $categoria = $arrCategorias[$i]->nombre;
-            $opciones = '<a href="'.BASE_URL.'editar-producto/'.$id_categoria.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
+            $opciones = '<a href="'.BASE_URL.'editar-categoria/'.$id_categoria.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
                         <button onclick="eliminar_producto('.$id_categoria.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrCategorias[$i]->options = $opciones;
        } 
@@ -48,5 +48,38 @@ elseif  ($tipo == "registrar") {
     }
 }
 
+if($tipo == 'ver'){
+    //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_categoria = $_POST['id_categoria'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objCategoria->verCategoria($id_categoria);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=>false, 'mensaje'=>"Error, no hay información");
+    }else{
+        $response = array('status'=>true, 'mensaje'=>"Datos encontrados", 'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
+
+}
+
+elseif ($tipo == "actualizar") {
+    $id_categoria = $_POST['id_categoria'];
+    $nombre = $_POST['nombre'];
+    $detalle = $_POST['detalle'];
+    if ($id_categoria == "" || $nombre == "" || $detalle == "") {
+        $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+    } else {
+        $arrCategoria = $objCategoria->actualizarCategoria($id_categoria, $nombre, $detalle);
+        if ($arrCategoria->p_id > 0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar categoria');
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
 
 ?>

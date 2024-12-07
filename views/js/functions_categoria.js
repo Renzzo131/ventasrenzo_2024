@@ -62,3 +62,50 @@ async function listar_categoria_lista() {
 if (document.querySelector('#tbl_categoria')) {
     listar_categoria_lista();
 }
+
+async function ver_categoria(id){
+    const formData= new FormData();
+    //agregale un hijo   creale un nombre y pasale el id
+    formData.append('id_categoria',id);
+    try {
+        //respndemos e indicamos hacia donde queremos enviar
+        let respuesta = await fetch(base_url+'controller/Categoria.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#id_categoria').value = json.contenido.id;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+        }else{
+            window.location = base_url+"admin-listar-categorias";
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Oops, ocurrió un error "+ error);
+    }
+}
+
+async function actualizar_categoria() {
+    const datos = new FormData(frmEditarCategoria);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
+        console.log(json);
+    } catch (e) {
+
+    }
+}

@@ -137,7 +137,7 @@ async function ver_compra(id){
             document.querySelector('#fecha_compra').value = json.contenido.fecha_compra;
             document.querySelector('#id_persona').value = json.contenido.id_persona;
         }else{
-            window.location = base_url+"admin-listar-productos";
+            window.location = base_url+"admin-listar-compras";
         }
         console.log(json);
     } catch (error) {
