@@ -147,3 +147,19 @@ elseif ($tipo == "actualizar") {
     }
     echo json_encode($arr_Respuesta);
 }
+
+elseif ($tipo == "eliminar") {
+     //ver si está llegando información, prueba. 
+    //print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    //funcion flecha llamamos a una funcion
+    $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+    /* print_r($arr_Respuesta); */
+    //si tenemos respuesta
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false);
+    } else {
+        $response = array('status' => true);
+    }
+    echo json_encode($response);
+}
