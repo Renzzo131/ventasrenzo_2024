@@ -85,7 +85,8 @@
 
             <!-- Botones -->
             <div class="col-12 d-flex justify-content-center">
-                <button type="reset" class="btn btn-dark w-48">Cancelar</button>
+            <a href="<?php echo BASE_URL; ?>admin-listar-personas" class="btn btn-dark">Cancelar</a>    
+            <!-- <button type="reset" class="btn btn-dark w-48">Cancelar</button> -->
                 <button type="button" class="btn btn-warning w-48" onclick="actualizar_persona();">Actualizar</button>
             </div>
         </form>
