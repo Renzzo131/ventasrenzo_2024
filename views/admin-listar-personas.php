@@ -29,6 +29,7 @@
                     <th>Provincia</th>
                     <th>Distrito</th>
                     <th>Dirección</th>
+                    <th>Función</th>
                     <th>Acciones</th>
                 </tr>
             </thead>

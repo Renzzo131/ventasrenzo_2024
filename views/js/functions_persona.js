@@ -68,6 +68,7 @@ async function listar_personas() {
                         <td>${item.provincia}</td>
                         <td>${item.distrito}</td>
                         <td>${item.direccion}</td>
+                        <td>${item.rol}</td>
                         <td>${item.options}</td>
                 `; document.querySelector('#tbl_persona').appendChild(nueva_fila)
             });
