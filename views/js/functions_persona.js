@@ -138,3 +138,41 @@ async function actualizar_persona() {
 
     }
 }
+
+async function eliminar_persona(id){
+    //dos partes, una para preguntar y una para ejecutar
+    swal({
+        title: "¿Realmente desea eliminar a la persona?",
+        text: '',
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if(willDelete){
+            fnt_eliminarPersona(id);
+        }
+    });
+    
+}
+
+async function fnt_eliminarPersona(id){
+    const formData = new FormData();
+    formData.append('id_persona', id);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=eliminar',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if(json.status){
+            swal("Eliminar", "Eliminado correctamente", "success")
+            document.querySelector('#fila'+ id).remove();
+        }else{
+            swal('Eliminar', 'Error al eliminar a la persona', 'warning');
+        }
+    } catch (error) {
+        console.log("Ocurrió un error "+error)
+    }
+}

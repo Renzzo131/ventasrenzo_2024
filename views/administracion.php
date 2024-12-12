@@ -1,3 +1,6 @@
+<?php
+require_once "conex"
+?>
 <main id="panel-administracion">
     <div class="container-fluid py-4">
         <div class="row mb-4">
@@ -12,6 +15,16 @@
                         <i class="fas fa-users icono-modulo fa-3x mb-3"></i>
                         <h5 class="card-title">Usuarios</h5>
                         <span class="badge badge-secondary">24 nuevos</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Módulo Categorías agregado aquí -->
+            <div class="col-md-2 mb-4">
+                <div class="card tarjeta-modulo" id="modulo-categorias" onclick="location.href='<?php echo BASE_URL; ?>admin-listar-categorias'">
+                    <div class="card-body text-center">
+                        <i class="fas fa-th-large icono-modulo fa-3x mb-3"></i>
+                        <h5 class="card-title">Categorías</h5>
+                        <span class="badge badge-secondary">8 categorías</span>
                     </div>
                 </div>
             </div>
@@ -57,16 +70,6 @@
                         <i class="fas fa-money-bill-wave icono-modulo fa-3x mb-3"></i>
                         <h5 class="card-title">Pagos</h5>
                         <span class="badge badge-secondary">2 pendientes</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Módulo Categorías agregado aquí -->
-            <div class="col-md-2 mb-4">
-                <div class="card tarjeta-modulo" id="modulo-categorias" onclick="location.href='<?php echo BASE_URL; ?>admin-listar-categorias'">
-                    <div class="card-body text-center">
-                        <i class="fas fa-th-large icono-modulo fa-3x mb-3"></i>
-                        <h5 class="card-title">Categorías</h5>
-                        <span class="badge badge-secondary">8 categorías</span>
                     </div>
                 </div>
             </div>

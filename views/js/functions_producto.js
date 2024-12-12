@@ -172,6 +172,7 @@ async function actualizar_producto() {
         console.log(json);
     } catch (e) {
 
+        console.log("Oops, ocurrio un error" + e);
     }
 }
 
@@ -195,7 +196,7 @@ async function fnt_eliminar(id){
     const formData = new FormData();
     formData.append('id_producto', id);
     try {
-        let respuesta = await fetch(base_url + 'controller/producto.php?tipo=eliminar',{
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',

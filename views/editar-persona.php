@@ -83,14 +83,6 @@
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Introduce un correo electrónico válido.">
             </div>
 
-            <!-- Estado oculto -->
-            <div class="col-12 mb-3">
-                <select name="estado" id="estado" class="form-control">
-                    <option value="1">Activo</option>
-                    <option value="2">Inactivo</option>
-                </select>
-            </div>
-
             <!-- Botones -->
             <div class="col-12 d-flex justify-content-center">
                 <button type="reset" class="btn btn-dark w-48">Cancelar</button>

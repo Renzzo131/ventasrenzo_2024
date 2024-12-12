@@ -23,7 +23,7 @@ class PersonaModel
 
     public function obtener_personas(){
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query("SELECT * FROM persona");
+        $respuesta = $this->conexion->query("SELECT * FROM persona WHERE estado = 1");
         while($objeto = $respuesta->fetch_object()){
             array_push($arrRespuesta, $objeto);
         }
@@ -58,8 +58,14 @@ class PersonaModel
         return $sql;
     }
 
-    public function actualizarPersona($id_persona, $razon_social, $telefono, $departamento, $provincia, $distrito,$cod_postal,$direccion,$rol,$correo,$estado){
-        $sql = $this->conexion->query("CALL actualizar_persona('{$id_persona}','{$razon_social}','{$telefono}','{$departamento}','{$provincia}','{$distrito}','{$cod_postal}','{$direccion}','{$rol}','{$correo}','{$estado}')");
+    public function actualizarPersona($id_persona, $razon_social, $telefono, $departamento, $provincia, $distrito,$cod_postal,$direccion,$rol,$correo){
+        $sql = $this->conexion->query("CALL actualizar_persona('{$id_persona}','{$razon_social}','{$telefono}','{$departamento}','{$provincia}','{$distrito}','{$cod_postal}','{$direccion}','{$rol}','{$correo}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
+        
+    public function eliminarPersona($id_persona){
+        $sql = $this->conexion->query("CALL eliminar_producto('{$id_persona}')");
         $sql = $sql->fetch_object();
         return $sql;
     }

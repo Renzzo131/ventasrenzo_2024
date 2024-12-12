@@ -15,7 +15,7 @@ if ($tipo == "listar"){
             $id_categoria = $arrCategorias[$i]->id;
             $categoria = $arrCategorias[$i]->nombre;
             $opciones = '<a href="'.BASE_URL.'editar-categoria/'.$id_categoria.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
-                        <button onclick="eliminar_producto('.$id_categoria.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
+                        <button onclick="eliminar_categoria('.$id_categoria.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrCategorias[$i]->options = $opciones;
        } 
        $arr_Respuesta['status'] = true;
@@ -82,4 +82,19 @@ elseif ($tipo == "actualizar") {
     echo json_encode($arr_Respuesta);
 }
 
+elseif ($tipo == "eliminar") {
+    //ver si está llegando información, prueba. 
+   //print_r($_POST);
+   $id_categoria = $_POST['id_categoria'];
+   //funcion flecha llamamos a una funcion
+   $arr_Respuesta = $objCategoria->eliminarCategoria($id_categoria);
+   /* print_r($arr_Respuesta); */
+   //si tenemos respuesta
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false);
+   } else {
+       $response = array('status' => true);
+   }
+   echo json_encode($response);
+}
 ?>

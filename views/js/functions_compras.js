@@ -167,3 +167,41 @@ async function actualizar_compra() {
     }
 }
 
+async function eliminar_compra(id){
+    //dos partes, una para preguntar y una para ejecutar
+    swal({
+        title: "¿Realmente desea eliminar la compra?",
+        text: '',
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if(willDelete){
+            fnt_eliminarCompra(id);
+        }
+    });
+    
+}
+
+async function fnt_eliminarCompra(id){
+    const formData = new FormData();
+    formData.append('id_compra', id);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compras.php?tipo=eliminar',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if(json.status){
+            swal("Eliminar", "Eliminado correctamente", "success")
+            document.querySelector('#fila'+ id).remove();
+        }else{
+            swal('Eliminar', 'Error al eliminar la compra', 'warning');
+        }
+    } catch (error) {
+        console.log("Ocurrió un error "+error)
+    }
+}
+

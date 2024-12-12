@@ -70,7 +70,7 @@ if ($tipo == 'ver') {
 
             $id_compras = $arrCompras[$i]->id;
             $opciones = '<a href="' . BASE_URL . 'editar-compra/' . $id_compras . '" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
-                        <button onclick="eliminar_producto(' . $id_compras . ')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
+                        <button onclick="eliminar_compra(' . $id_compras . ')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrCompras[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -96,4 +96,18 @@ if ($tipo == 'ver') {
         }
     }
     echo json_encode($arr_Respuesta);
+}
+
+elseif ($tipo == "eliminar") {
+
+   $id_compra = $_POST['id_compra'];
+
+   $arr_Respuesta = $objCompras->eliminarCompra($id_compra);
+
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false);
+   } else {
+       $response = array('status' => true);
+   }
+   echo json_encode($response);
 }

@@ -75,7 +75,7 @@ elseif ($tipo == "listar"){
             $id_persona = $arrPersonas[$i]->id;
             $razon_social = $arrPersonas[$i]->razon_social;
             $opciones = '<a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warning"><i class="fas fa-edit"></i>Editar</a>
-                        <button onclick="eliminar_producto('.$id_persona.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
+                        <button onclick="eliminar_persona('.$id_persona.')" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrPersonas[$i]->options = $opciones;
        } 
        $arr_Respuesta['status'] = true;
@@ -116,11 +116,10 @@ elseif ($tipo == "actualizar") {
     $direccion = $_POST['direccion'];
     $rol = $_POST['rol'];
     $correo = $_POST['correo'];
-    $estado = $_POST['estado'];
-    if ($id_persona == "" || $razon_social == "" || $telefono == "" || $departamento == "" || $provincia == ""|| $distrito == ""|| $cod_postal == ""|| $direccion == ""|| $rol == ""|| $correo == ""|| $estado == "") {
+    if ($id_persona == "" || $razon_social == "" || $telefono == "" || $departamento == "" || $provincia == ""|| $distrito == ""|| $cod_postal == ""|| $direccion == ""|| $rol == ""|| $correo == "") {
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
     } else {
-        $arrPersona = $objPersona->actualizarPersona($id_persona, $razon_social, $telefono, $departamento, $provincia, $distrito,$cod_postal,$direccion,$rol,$correo,$estado);
+        $arrPersona = $objPersona->actualizarPersona($id_persona, $razon_social, $telefono, $departamento, $provincia, $distrito,$cod_postal,$direccion,$rol,$correo);
         if ($arrPersona->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
         } else {
@@ -130,4 +129,19 @@ elseif ($tipo == "actualizar") {
     echo json_encode($arr_Respuesta);
 }
 
+elseif ($tipo == "eliminar") {
+    //ver si está llegando información, prueba. 
+   //print_r($_POST);
+   $id_persona = $_POST['id_persona'];
+   //funcion flecha llamamos a una funcion
+   $arr_Respuesta = $objPersona->eliminarPersona($id_persona);
+   /* print_r($arr_Respuesta); */
+   //si tenemos respuesta
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false);
+   } else {
+       $response = array('status' => true);
+   }
+   echo json_encode($response);
+}
 ?>
