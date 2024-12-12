@@ -65,7 +65,7 @@ class PersonaModel
     }
         
     public function eliminarPersona($id_persona){
-        $sql = $this->conexion->query("CALL eliminar_producto('{$id_persona}')");
+        $sql = $this->conexion->query("CALL eliminar_persona('{$id_persona}')");
         $sql = $sql->fetch_object();
         return $sql;
     }

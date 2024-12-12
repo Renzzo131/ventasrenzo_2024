@@ -12,11 +12,6 @@ class ProductoModel
     public function resgistrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen1, $id_categoria, $id_proveedor, $tipoArchivo)
     {
         $sql = $this->conexion->query("CALL registrar_producto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}','{$imagen1}','{$id_categoria}','{$id_proveedor}','{$tipoArchivo}')");
-        //$sql = $this->conexion->query("select * from producto");
-/*         if ($sql === false) {
-            // Mostrar el error de la consulta
-            die("Error en la consulta: " . $this->conexion->error);
-        } */
         $sql = $sql->fetch_object();
         return $sql;
     }
